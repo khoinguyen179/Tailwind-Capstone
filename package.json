@@ -1,8 +1,8 @@
 {
   "dependencies": {
-    "@tailwindcss/cli": "^4.1.10",
+    "@tailwindcss/cli": "^4.1.11",
     "animate.css": "^4.1.1",
-    "tailwindcss": "^4.1.10",
+    "tailwindcss": "^4.1.11",
     "wow.js": "^1.2.2"
   }
 }
