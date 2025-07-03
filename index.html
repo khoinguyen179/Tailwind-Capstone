@@ -528,6 +528,9 @@
                         <div
                             class="relative flex items-center justify-center h-[120px] w-[120px] rounded-full border-[3px] border-black backdrop-blur-[2px] hover:bg-orange-600 hover:text-white transition-all duration-300">
                             Play
+                            <div
+                                class="absolute -z-[1] h-[110%] w-[110%] animate-[ping_1.5s_ease-in-out_infinite] rounded-full bg-gray-600 opacity-20 ">
+                            </div>
                         </div>
                     </a>
                 </div>
@@ -545,17 +548,17 @@
                         <div
                             class="funfact__data flex flex-col justify-center gap-x-11 gay-y-8 text-center sm:gap-y-[20px] sm:flex-row md:text-left">
                             <div>
-                                <h1 class="text-orange-600 font-semibold  ">
-                                    <span class="counter">92</span>
+                                <h2 class="text-orange-600 font-semibold  ">
+                                    <span class="counter" data-counter-time="2000">92</span>
                                     %
-                                </h1>
+                                </h2>
                                 <p class="text-center ">Customer service inquiries</p>
                             </div>
                             <div>
-                                <h1 class="text-orange-600 font-semibold  ">
-                                    <span class="counter">75</span>
+                                <h2 class="text-orange-600 font-semibold  ">
+                                    <span class="counter" data-counter-time="2000">75</span>
                                     %
-                                </h1>
+                                </h2>
                                 <p class="text-center ">Using financial institutions</p>
                             </div>
                         </div>
@@ -791,7 +794,7 @@
                             data-inactive-classes="text-black dark:text-black">
                             <p id="accordion-flush-heading-1">
                                 <button type="button"
-                                    class="flex items-center justify-between w-full py-4 font-medium rtl:text-right text-black border-gray-200 dark:border-gray-700 gap-2"
+                                    class="flex items-center justify-between w-full py-4 font-medium rtl:text-right text-black hover:cursor-pointer border-gray-200 dark:border-gray-700 gap-2"
                                     data-accordion-target="#accordion-flush-body-1" aria-expanded="true"
                                     aria-controls="accordion-flush-body-1">
                                     <span class=" sm:text-[20px]  md:text-[28px]  xl:text-[28px] font-bold">How do I
@@ -813,7 +816,7 @@
                             </div>
                             <p id="accordion-flush-heading-2">
                                 <button type="button"
-                                    class="flex items-center justify-between w-full py-4 font-medium rtl:text-right text-black border-gray-200 dark:border-gray-700 gap-2"
+                                    class="flex items-center justify-between w-full py-4 font-medium rtl:text-right hover:cursor-pointer text-black border-gray-200 dark:border-gray-700 gap-2"
                                     data-accordion-target="#accordion-flush-body-2" aria-expanded="true"
                                     aria-controls="accordion-flush-body-2">
                                     <span class="sm:text-[20px]  md:text-[28px]  xl:text-[28px] font-bold">Can I
@@ -835,7 +838,7 @@
                             </div>
                             <p id="accordion-flush-heading-3">
                                 <button type="button"
-                                    class="flex items-center justify-between w-full py-4 font-medium rtl:text-right text-black border-gray-200 dark:border-gray-700 gap-2"
+                                    class="flex items-center justify-between w-full py-4 font-medium hover:cursor-pointer rtl:text-right text-black border-gray-200 dark:border-gray-700 gap-2"
                                     data-accordion-target="#accordion-flush-body-3" aria-expanded="true"
                                     aria-controls="accordion-flush-body-3">
                                     <span class="sm:text-[20px]  md:text-[28px]  xl:text-[28px] font-bold">How can AI
@@ -873,7 +876,7 @@
                 <div class="grid xl:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-5">
                     <!-- testimonal-items  -->
                     <div
-                        class="flex flex-col gap-y-8 max-w-sm p-6 bg-black border border-gray-100 rounded-lg shadow-sm  dark:border-gray-700 wow animate__animated animate__fadeInLeft">
+                        class="flex flex-col justify-between  gap-y-8 max-w-sm p-6 bg-black border border-gray-100 rounded-lg shadow-sm  dark:border-gray-700 wow animate__animated animate__fadeInLeft">
                         <div class="block">
                             <img src="https://azzle.netlify.app/assets/img/th-1/rating.svg" alt="">
                         </div>
@@ -896,7 +899,7 @@
 
                     </div>
                     <div
-                        class="flex flex-col gap-y-8 max-w-sm p-6 bg-black border border-gray-100 rounded-lg shadow-sm  dark:border-gray-700 wow animate__animated animate__fadeInLeft">
+                        class="flex flex-col justify-between  gap-y-8 max-w-sm p-6 bg-black border border-gray-100 rounded-lg shadow-sm  dark:border-gray-700 wow animate__animated animate__fadeInLeft">
                         <div class="block">
                             <img src="https://azzle.netlify.app/assets/img/th-1/rating.svg" alt="">
                         </div>
@@ -919,7 +922,7 @@
 
                     </div>
                     <div
-                        class="flex flex-col gap-y-8 max-w-sm p-6 bg-black border border-gray-100 rounded-lg shadow-sm  dark:border-gray-700 wow animate__animated animate__fadeInLeft">
+                        class="flex flex-col justify-between gap-y-8 max-w-sm p-6 bg-black border border-gray-100 rounded-lg shadow-sm  dark:border-gray-700 wow animate__animated animate__fadeInLeft">
                         <div class="block">
                             <img src="https://azzle.netlify.app/assets/img/th-1/rating.svg" alt="">
                         </div>
@@ -942,7 +945,7 @@
 
                     </div>
                     <div
-                        class="flex flex-col gap-y-8 max-w-sm p-6 bg-black border border-gray-100 rounded-lg shadow-sm  dark:border-gray-700 wow animate__animated animate__fadeInRight">
+                        class="flex flex-col justify-between  gap-y-8 max-w-sm p-6 bg-black border border-gray-100 rounded-lg shadow-sm  dark:border-gray-700 wow animate__animated animate__fadeInRight">
                         <div class="block">
                             <img src="https://azzle.netlify.app/assets/img/th-1/rating.svg" alt="">
                         </div>
@@ -965,7 +968,7 @@
 
                     </div>
                     <div
-                        class="flex flex-col gap-y-8 max-w-sm p-6 bg-black border border-gray-100 rounded-lg shadow-sm  dark:border-gray-700  wow animate__animated animate__fadeInRight">
+                        class="flex flex-col justify-between  gap-y-8 max-w-sm p-6 bg-black border border-gray-100 rounded-lg shadow-sm  dark:border-gray-700  wow animate__animated animate__fadeInRight">
                         <div class="block">
                             <img src="https://azzle.netlify.app/assets/img/th-1/rating.svg" alt="">
                         </div>
@@ -988,7 +991,7 @@
 
                     </div>
                     <div
-                        class="flex flex-col gap-y-8 max-w-sm p-6 bg-black border border-gray-100 rounded-lg shadow-sm  dark:border-gray-700  wow animate__animated animate__fadeInRight">
+                        class="flex flex-col justify-between  gap-y-8 max-w-sm p-6 bg-black border border-gray-100 rounded-lg shadow-sm  dark:border-gray-700  wow animate__animated animate__fadeInRight">
                         <div class="block">
                             <img src="https://azzle.netlify.app/assets/img/th-1/rating.svg" alt="">
                         </div>
@@ -1145,16 +1148,20 @@
             },
         });
     </script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
-        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.js"
+        integrity="sha512-+k1pnlgt4F1H8L7t3z95o3/KO+o78INEcXTbnoJQ/F2VqDVhWoaiVml/OEHv9HsVgxUaVW+IbiZPUJQfF/YxZw=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js"
         integrity="sha512-ZKNVEa7gi0Dz4Rq9jXcySgcPiK+5f01CqW+ZoKLLKr9VMXuCsw3RjWiv8ZpIOa0hxO79np7Ec8DDWALM0bDOaQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <!-- Count Up -->
     <script src="./libs/count-up/jquery.counterup.min.js"></script>
     <script>
-        $('.counter').countUp();
+        $(document).ready(function () {
+            $('.counter').counterUp({
+                delay: 10, // Delay in milliseconds
+                time: 1000 // Total duration of the animation in milliseconds
+            });
+        });
     </script>
     <!-- wow.js  -->
     <script src="./libs/wowjs/wow.min.js"></script>

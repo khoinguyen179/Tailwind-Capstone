@@ -6,9 +6,11 @@ body {
   --tw-text-opacity: 1;
   color: rgb(25 25 25 / var(--tw-text-opacity));
 }
+
 @theme {
   --color-orange-400: rgb(254 51 10);
 }
+
 .font-dmSans {
   font-family: DM Sans, sans-serif;
 }
@@ -59,9 +61,7 @@ body {
   z-index: -1;
   transform-origin: top right;
   --tw-scale-y: 0;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(0)
-    skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(1)
-    scaleY(var(--tw-scale-y));
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(0) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(1) scaleY(var(--tw-scale-y));
   content: var(--tw-content);
   transition-duration: 300ms;
 }
@@ -141,6 +141,7 @@ h5 {
     font-size: 28px;
   }
 }
+
 .bg-theme {
   background-color: #efeae3;
 }
@@ -153,19 +154,23 @@ h5 {
 .menu-button:hover img {
   transform: rotate(0deg);
 }
+
 .swiper-slide {
   width: fit-content !important;
 }
+
 .swiper-wrapper {
   -webkit-transition-timing-function: linear !important;
   -o-transition-timing-function: linear !important;
 }
+
 /*hero-section*/
 .btn1 {
   position: relative;
   z-index: 0;
   overflow: hidden;
 }
+
 .btn1::after {
   content: "";
   position: absolute;
@@ -178,11 +183,13 @@ h5 {
   transform: translateY(0);
   z-index: -1;
 }
+
 .btn1:hover::after {
   content: "";
   background-color: red;
   transform: translateY(100%);
 }
+
 .btn2 {
   position: relative;
   z-index: 0;
@@ -191,10 +198,12 @@ h5 {
   transition: border 0.5s ease;
   color: black;
 }
+
 .btn2:hover {
   border: 2px solid transparent;
   color: white;
 }
+
 .btn2::after {
   content: "";
   position: absolute;
@@ -207,12 +216,14 @@ h5 {
   transform: translateY(0);
   z-index: -1;
 }
+
 .btn2:hover::after {
   content: "";
 
   background-color: red;
   transform: translateY(100%);
 }
+
 /* About */
 
 .pt-20 {
@@ -235,4 +246,20 @@ h5 {
 .orange-gradient-2 {
   background: radial-gradient(50% 50% at 50% 50%, #fe330a 0%, #ff9831 100%);
   filter: blur(55px);
+}
+
+
+/* HuuPhuc  */
+/* Funfac-section  */
+/* Animation  */
+@keyframes ping {
+  from {
+    transform: scale(1);
+    opacity: 1;
+  }
+
+  to {
+    transform: scale(2);
+    opacity: 0;
+  }
 }
