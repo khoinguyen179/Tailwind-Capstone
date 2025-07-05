@@ -223,7 +223,18 @@ h5 {
   background-color: red;
   transform: translateY(100%);
 }
+<<<<<<< HEAD
+.background1 {
+  background: radial-gradient(50% 50% at 50% 50%, #ff9831 0%, #fe330a 100%);
+  filter: blur(55px);
+}
+.background2 {
+  background: radial-gradient(50% 50% at 50% 50%, #fe330a 0%, #ff9831 100%);
+  filter: blur(55px);
+}
+=======
 
+>>>>>>> 4ccc99906bcc9d8879db833e1c3e8306dd223750
 /* About */
 
 .pt-20 {

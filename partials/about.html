@@ -1,819 +1,1051 @@
 <!doctype html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Azzle - AI Technology & Startup HTML Template</title>
+    <link rel="icon" href="../assets/image/favicon.png" type="image/png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="../assets/css/tailwind/output.css">
     <link rel="stylesheet" href="../assets/css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/brands.min.css" integrity="sha512-58P9Hy7II0YeXLv+iFiLCv1rtLW47xmiRpC1oFafeKNShp8V5bKV/ciVtYqbk2YfxQMt58DjNfkXFOn62xE+g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/brands.min.css"
+        integrity="sha512-58P9Hy7II0YeXLv+iFiLCv1rtLW47xmiRpC1oFafeKNShp8V5bKV/ciVtYqbk2YfxQMt58DjNfkXFOn62xE+g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.css" rel="stylesheet" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="../libs/animate_css/animate.min.css">
 
 </head>
+
 <body>
-<header class="w-full bg-header z-50 bg-theme py-5 px-1">
-    <div class="container ">
-        <div class="flex items-center justify-between gap-x-8">
-            <a href="../index.html">
-                <img src="../assets/image/logo-dark.png" alt="">
-            </a>
-            <div>
-                <nav class="hidden lg:flex items-center gap-x-12 font-semibold text-base justify-between">
-                    <ul class="flex gap-x-12 font-semibold text-base justify-between">
-                        <li>
-                            <div class="relative inline-block text-left">
-                                <div class="relative group inline-block">
-                                    <button class="menu-button cursor-pointer rounded-md flex gap-1.5">
-                                        Demo
-                                        <img  src="https://azzle.netlify.app/assets/img/icon-black-cheveron-right.svg" alt="" width="16" height="16">
-                                    </button>
-                                    <div class="absolute left-0 mt-2 w-48 bg-white rounded-md shadow-lg opacity-0 group-hover:opacity-100 invisible group-hover:visible transition-all duration-300 z-10 translate-y-2 group-hover:translate-y-0">
-                                        <div class="absolute top-0 left-7 transform -translate-x-1/2 -translate-y-1/2 -z-10">
-                                            <div class="w-3 h-3 bg-white rotate-45 shadow-md"></div>
-                                        </div>
-                                        <!-- Menu dropdown -->
-                                        <div class="bg-white rounded-md shadow-lg z-10 py-3">
-                                            <a href="#" class="block px-4 py-2 text-gray-800 hover:text-orange-600 duration-500">Demo 1</a>
-                                            <a href="#" class="block px-4 py-2 text-gray-800 hover:text-orange-600 duration-500">Demo 2</a>
-                                            <a href="#" class="block px-4 py-2 text-gray-800 hover:text-orange-600 duration-500">Demo 3</a>
-                                            <a href="#" class="block px-4 py-2 text-gray-800 hover:text-orange-600 duration-500">Demo 4</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <a href="">About</a>
-                        </li>
-                        <li>
-                            <div class="relative inline-block text-left">
-                                <div class="relative group inline-block">
-                                    <button class="menu-button cursor-pointer rounded-md flex gap-1.5">
-                                        Services
-                                        <img  src="https://azzle.netlify.app/assets/img/icon-black-cheveron-right.svg" alt="" width="16" height="16">
-                                    </button>
-                                    <div class="absolute left-0 mt-2 w-48 bg-white rounded-md shadow-lg opacity-0 group-hover:opacity-100 invisible group-hover:visible transition-all duration-300 z-10 translate-y-2 group-hover:translate-y-0">
-                                        <div class="absolute top-0 left-7 transform -translate-x-1/2 -translate-y-1/2 -z-10">
-                                            <div class="w-3 h-3 bg-white rotate-45 shadow-md"></div>
-                                        </div>
-                                        <!-- Menu dropdown -->
-                                        <div class="bg-white rounded-md shadow-lg z-10 py-3">
-                                            <a href="#" class="block px-4 py-2 text-gray-800  hover:text-orange-600 duration-500">Services</a>
-                                            <a href="#" class="block px-4 py-2 text-gray-800  hover:text-orange-600 duration-500">Services Details</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
-
-                        <li>
-                            <div class="relative inline-block text-left">
-                                <div class="relative group inline-block">
-                                    <button class="menu-button cursor-pointer rounded-md flex gap-1.5">
-                                        Pages
-                                        <img  src="https://azzle.netlify.app/assets/img/icon-black-cheveron-right.svg" alt="" width="16" height="16">
-                                    </button>
-                                    <div class="absolute left-0 mt-2 w-48 bg-white rounded-md shadow-lg opacity-0 group-hover:opacity-100 invisible group-hover:visible transition-all duration-300 z-10 translate-y-2 group-hover:translate-y-0">
-                                        <div class="absolute top-0 left-7 transform -translate-x-1/2 -translate-y-1/2 -z-10">
-                                            <div class="w-3 h-3 bg-white rotate-45 shadow-md"></div>
-                                        </div>
-                                        <!-- Menu dropdown -->
-                                        <div class="bg-white rounded-md shadow-lg z-10 py-3">
-                                            <div class="relative group/sub">
-                                                <div class="flex justify-between items-center px-4 py-2  cursor-pointer hover:text-orange-600 duration-500">
-                                                    Blogs
-                                                    <svg class="w-3 h-3 ml-2" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-                                                        <path d="M9 5l7 7-7 7" />
-                                                    </svg>
-                                                </div>
-
-                                                <!-- Submenu -->
-                                                <div class="absolute left-full top-0 mt-0 w-48 bg-white rounded-md shadow-lg opacity-0 invisible group-hover/sub:visible group-hover/sub:opacity-100 transition duration-200 z-30 py-3">
-                                                    <a href="#" class="block px-4 py-2 hover:text-orange-600 duration-500">Blogs</a>
-                                                    <a href="#" class="block px-4 py-2 hover:text-orange-600 duration-500">Blogs Details</a>
-                                                </div>
-                                            </div>
-                                            <div class="relative group/sub">
-                                                <div class="flex justify-between items-center px-4 py-2  cursor-pointer hover:text-orange-600 duration-500">
-                                                    Team
-                                                    <svg class="w-3 h-3 ml-2" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-                                                        <path d="M9 5l7 7-7 7" />
-                                                    </svg>
-                                                </div>
-
-                                                <!-- Submenu -->
-                                                <div class="absolute left-full top-0 mt-0 w-48 bg-white rounded-md shadow-lg opacity-0 invisible group-hover/sub:visible group-hover/sub:opacity-100 transition duration-200 z-30 py-3">
-                                                    <a href="#" class="block px-4 py-2 hover:text-orange-600 duration-500">Teams</a>
-                                                    <a href="#" class="block px-4 py-2 hover:text-orange-600 duration-500">Teams Detail</a>
-                                                </div>
-                                            </div>
-                                            <div class="relative group/sub">
-                                                <div class="flex justify-between items-center px-4 py-2  cursor-pointer hover:text-orange-600 duration-500">
-                                                    FAQ
-                                                    <svg class="w-3 h-3 ml-2" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-                                                        <path d="M9 5l7 7-7 7" />
-                                                    </svg>
-                                                </div>
-
-                                                <!-- Submenu -->
-                                                <div class="absolute left-full top-0 mt-0 w-48 bg-white rounded-md shadow-lg opacity-0 invisible group-hover/sub:visible group-hover/sub:opacity-100 transition duration-200 z-30 py-3">
-                                                    <a href="#" class="block px-4 py-2 hover:text-orange-600 duration-500">FAQ 1</a>
-                                                    <a href="#" class="block px-4 py-2 hover:text-orange-600 duration-500">FAQ 2</a>
-                                                </div>
-                                            </div>
-                                            <div class="relative group/sub">
-                                                <div class="flex justify-between items-center px-4 py-2  cursor-pointer hover:text-orange-600 duration-500 ">
-                                                    Portfolio
-                                                    <svg class="w-3 h-3 ml-2" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-                                                        <path d="M9 5l7 7-7 7" />
-                                                    </svg>
-                                                </div>
-
-                                                <!-- Submenu -->
-                                                <div class="absolute left-full top-0 mt-0 w-48 bg-white rounded-md shadow-lg opacity-0 invisible group-hover/sub:visible group-hover/sub:opacity-100 transition duration-200 z-30 py-3">
-                                                    <a href="#" class="block px-4 py-2 hover:text-orange-600 duration-500">Portfolio 1</a>
-                                                    <a href="#" class="block px-4 py-2 hover:text-orange-600 duration-500">Portfolio 2</a>
-                                                </div>
-                                            </div>
-                                            <a href="#" class="block px-4 py-2 hover:text-orange-600 duration-500">Pricing</a>
-                                            <div class="relative group/sub">
-                                                <div class="flex justify-between items-center px-4 py-2  cursor-pointer hover:text-orange-600 duration-500">
-                                                    Utilities
-                                                    <svg class="w-3 h-3 ml-2" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-                                                        <path d="M9 5l7 7-7 7" />
-                                                    </svg>
-                                                </div>
-
-                                                <!-- Submenu -->
-                                                <div class="absolute left-full top-0 mt-0 w-48 bg-white rounded-md shadow-lg opacity-0 invisible group-hover/sub:visible group-hover/sub:opacity-100 transition duration-200 z-30 py-3">
-                                                    <a href="#" class="block px-4 py-2 hover:text-orange-600 duration-500">Error 404</a>
-                                                    <a href="#" class="block px-4 py-2 hover:text-orange-600 duration-500">Log In</a>
-                                                    <a href="#" class="block px-4 py-2 hover:text-orange-600 duration-500">Sign Up</a>
-                                                    <a href="#" class="block px-4 py-2 hover:text-orange-600 duration-500">Reset Password</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
-
-                        <li>
-                            <a href="">Contact</a>
-                        </li>
-                    </ul>
-                </nav>
-            </div>
-            <div class="flex items-center gap-6 hidden md:flex">
-                <button type="button" class="button text-4xl focus:outline-none rounded-full text-sm font-medium border border-gray-300 px-5 py-2.5 me-2 mb-2  hover:text-white duration-500 after:bg-orange-600"><a href="">Log in</a></button>
-                <button type="button" class="button text-4xl focus:outline-none rounded-full text-sm font-medium border text-white bg-black  border-gray-300 px-5 py-2.5 me-2 mb-2  hover:text-white duration-500 after:bg-orange-600"><a href="">Sign Up Free</a></button>
-            </div>
-            <div>
-                <button class="md:hidden text-gray-600 focus:outline-none" onclick="toggleSidebar()">
-                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                              d="M4 6h16M4 12h16M4 18h16" />
-                    </svg>
-                </button>
-            </div>
-        </div>
-    </div>
-</header>
-<div id="sidebar" class=" fixed top-0 left-0 h-full w-64 bg-white shadow-lg transform -translate-x-full transition-transform duration-300 ease-in-out z-50 md:hidden">
-    <div class="px-6 py-4 flex justify-between items-center ">
-        <span class="text-lg font-semibold text-gray-800"></span>
-        <button onclick="toggleSidebar()">
-            <svg class="w-5 h-5 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                      d="M6 18L18 6M6 6l12 12" />
-            </svg>
-        </button>
-    </div>
-    <nav class="px-6 py-4 space-y-2 font-semibold grid  grid-rows-6 gap-2 text-gray-800">
-        <a href="#" class="block  hover:text-blue-500">Home</a>
-            <div class="flex  gap-y-2">
-            <button onclick="openSubmenu('demos')" class="w-full text-left flex  hover:text-blue-500">Demo</button>
-            <img src="../assets/image/about/icon-black-cheveron-right.svg" alt="">
-        </div>
-        <a href="../partials/about.html"> About </a>
-        <div class="flex  gap-y-2">
-            <button onclick="openSubmenu('services')" class="w-full text-left    hover:text-blue-500">Services
-            </button>
-            <img src="../assets/image/about/icon-black-cheveron-right.svg" alt="">
-        </div>
-        <div class="flex  gap-y-2">
-            <button onclick="openSubmenu('pages')" class="w-full text-left  hover:text-blue-500">Pages
-            </button>
-            <img src="../assets/image/about/icon-black-cheveron-right.svg" alt="">
-        </div>
-        <a href="#" class="block  hover:text-blue-500">Contact</a>
-    </nav>
-</div>
-
-
-
-<section id="section-breadcrumb" class="bg-theme rounded-b-[50px]">
-    <div class="mb-[128px] pt-[195px] pb-[130px] ">
-        <div class="container  max-w-[1332px]">
-            <div class="text-center">
-                <h1 class="mx-auto mb-8 max-w-[500ox] ">
-                    About Us
-                </h1>
-                <ul class=" font-semibold flex flex-wrap items-center justify-center gap-x-6 text-xl leading-3 ">
-                    <li><a href="../index.html" class="hover:text-orange-600 duration-500">Home</a></li>
-                    <li>
-                        <img src="https://azzle.netlify.app/assets/img/cheveron-right.svg" alt="">
-                    </li>
-                    <li class="text-orange-600">About</li>
-                </ul>
-            </div>
-        </div>
-    </div>
-</section>
-<section id="section-hero">
-    <div class="mb-[5rem] lg:mb-[6rem]">
-        <div class="container">
-            <div class="mb-10 text-center lg:mb-12 xl:mb-[5rem] mb-12 wow animate__animated animate__fadeInUp" data-wow-duration="3s" data-wow-delay="0.5s">
-                <div class="mx-auto md:max-w-xl lg:max-w-3xl xl:max-w-[950px]">
-                    <h2 class="font-semibold " >
-                        We are a trusted partner in our clients' AI journey
-                    </h2>
-                </div>
-            </div>
-            <div class="overflow-hidden rounded-3xl wow animate__animated animate__zoomIn" data-wow-duration="3s" data-wow-delay="0.5s">
-                <img src="../assets/image/about/about-hero-image.png" alt="" class="h-full w-full object-cover">
-            </div>
-        </div>
-
-    </div>
-
-</section>
-<section id="section-funfact">
-    <div class="container">
-        <ul class="grid grid-cols-1 gap-10 gap-y-5 text-center sm:grid-cols-2 sm:text-left lg:grid-cols-4">
-            <li class="wow animate__animated animate__fadeInUp" data-wow-delay="0.1s" data-wow-duration="2s">
-                <h3 class="text-5xl text-orange-600 md:text-6xl lg:text-7xl xl:text-[90px] font-semibold">
-                    <span class="counter">2</span>
-                    K+
-                </h3>
-                <span>Successful Implementations</span>
-            </li>
-            <li class="wow animate__animated animate__fadeInUp" data-wow-delay="0.2s" data-wow-duration="2s">
-                <h3 class="text-5xl text-orange-600 md:text-6xl lg:text-7xl xl:text-[90px] font-semibold">
-                    <span class="counter">95</span>%
-                </h3>
-                <span>Client Satisfaction Rate</span>
-            </li>
-            <li class="wow animate__animated animate__fadeInUp" data-wow-delay="0.3s" data-wow-duration="2s">
-                <h3 class="text-5xl text-orange-600 md:text-6xl lg:text-7xl xl:text-[90px] font-semibold">
-                    <span class="counter">40</span>+
-                </h3>
-                <span>Awards and Recognitions</span>
-            </li>
-            <li class="wow animate__animated animate__fadeInUp" data-wow-delay="0.4s" data-wow-duration="2s">
-                <h3 class="text-5xl text-orange-600 md:text-6xl lg:text-7xl xl:text-[90px] font-semibold">
-                    <span class="counter">73</span>+
-                </h3>
-                <span class="block text-lg ">Growth and Expansion</span>
-            </li>
-        </ul>
-    </div>
-</section>
-<section id="section-content">
-    <div class="pb-20 pt-20 xl:pb-[150px] xl:pt-[130px]">
-        <div class="container">
-            <div class="grid grid-cols-1 gap-12 items-center md:grid-cols-2 xl:grid-cols-[minmax(0,_1.3fr)_1fr]">
-                <div class="overflow-hidden rounded-md wow animate__animated animate__fadeInLeft" data-wow-delay="0.5s" data-wow-duration="2s" >
-                    <div class="mb-6">
-                        <h2>
-                            Delivering the best solutions with AI
-                        </h2>
-                    </div>
-                    <div class="text-lg leading-[1.4] lg:text-[21px]">
-                        <p class="mb-7 last:mb-0">
-                            Our mission is to empower businesses with AI-powered solutions that increase productivity, improve decision-making and drive growth.
-                        </p>
-                        <p class="mb-7 last:mb-0">
-                            Since 2016 we have been passionate about helping our clients harness With a team of AI experts and data scientists their full potential & stay competitive in an increasingly digital world.
-                        </p>
-                        <button class="button mt-5 rounded-4xl border-2 text-white border-black bg-black font-semibold duration-500 hover:text-white after:border-b-orange-600 after:bg-orange-600 ">
-                            Get in touch
-                        </button>
-                    </div>
-                </div>
-                <div class="overflow-hidden rounded-md wow animate__animated animate__fadeInRight" data-wow-delay="0.5s" data-wow-duration="2s">
-                    <img src="../assets/image/about/about-image.png" alt="" class="h-auto w-full">
-                </div>
-            </div>
-        </div>
-
-    </div>
-</section>
-<section id="section-core-value">
-    <div class="mx-5 rounded-[50px] bg-black px-[20px] py-20 sm:px-[50px] md:mx-[50px] lg:px-[100px] xl:py-[130px] wow animate__animated animate__fadeInUp" data-wow-delay="0.5s" data-wow-duration="3s">
-        <div class="container">
-              <div class="mb-10 text-center lg">
-                  <div class="mx-auto text-center lg:mb-12 xl:mb-20">
-                      <div class="mx-auto md:max-w-xl lg:max-w-3xl xl:max-w-[745px]">
-                          <h2 class="text-white">
-                              The core values behind our work
-                          </h2>
-                      </div>
-                  </div>
-                  <div class="mb-6 h-[4px] w-full rounded bg-colorCodGray sm:mb-0"></div>
-                  <ul class="grid grid-cols-1 justify-between gap-6 md:grid-cols-2 xl:flex xl:flex-nowrap text-left">
-                      <li class="relative after:absolute after:-top-[3px] after:left-0 after:h-[5px] after:w-full after:scale-x-0 after:rounded-[5px] after:bg-orange-600 after:transition-all after:duration-300 hover:after:scale-x-0 sm:pt-6 lg:pt-10 xl:hover:after:scale-x-100">
-                          <div class="mb-3 flex items-center gap-x-3 md:mb-6">
-                              <div class="h-[30px] w-[30px]">
-                                  <img src="../assets/image/about/core-value-icon-1.svg" alt="" width="30" height="30">
-                              </div>
-                              <h4 class="text-white flex-1">
-                                  Innovation
-                              </h4>
-                        </div>
-                          <p class="text-lg text-white lg:text-[21px] ">
-                              We’re committed to exploring new technologies, and finding
-                          </p>
-                      </li>
-                      <li class="relative after:absolute after:-top-[3px] after:left-0 after:h-[5px] after:w-full after:scale-x-0 after:rounded-[5px] after:bg-orange-600 after:transition-all after:duration-300 hover:after:scale-x-0 sm:pt-6 lg:pt-10 xl:hover:after:scale-x-100">
-                          <div class="mb-3 flex items-center gap-x-3 md:mb-6">
-                              <div class="h-[30px] w-[30px]">
-                                  <img src="../assets/image/about/core-value-icon-2.svg" alt="" width="30" height="30">
-                              </div>
-                              <h4 class="text-white flex-1">
-                                  Excellence
-                              </h4>
-                          </div>
-                          <p class="text-lg text-white lg:text-[21px] ">
-                              We set high standards for our work & we are dedicated team
-                          </p>
-                      </li>
-                      <li class="relative after:absolute after:-top-[3px] after:left-0 after:h-[5px] after:w-full after:scale-x-0 after:rounded-[5px] after:bg-orange-600 after:transition-all after:duration-300 hover:after:scale-x-0 sm:pt-6 lg:pt-10 xl:hover:after:scale-x-100 ">
-                          <div class="mb-3 flex items-center gap-x-3 md:mb-6">
-                              <div class="h-[30px] w-[30px]">
-                                  <img src="../assets/image/about/core-value-icon-3.svg" alt="" width="30" height="30">
-                              </div>
-                              <h4 class="text-white flex-1">
-                                  Collaboration
-                              </h4>
-                          </div>
-                          <p class="text-lg text-white lg:text-[21px] ">
-                              We believe in the power of collaboration, working closely
-                          </p>
-                      </li>
-                      <li class="relative after:absolute after:-top-[3px] after:left-0 after:h-[5px] after:w-full after:scale-x-0 after:rounded-[5px] after:bg-orange-600 after:transition-all after:duration-300 hover:after:scale-x-0 sm:pt-6 lg:pt-10 xl:hover:after:scale-x-100">
-                          <div class="mb-3 flex items-center gap-x-3 md:mb-6">
-                              <div class="h-[30px] w-[30px]">
-                                  <img src="../assets/image/about/core-value-icon-4.svg" alt="" width="30" height="30">
-                              </div>
-                              <h4 class="text-white flex-1">
-                                  Integrity
-                              </h4>
-                          </div>
-                          <p class="text-lg text-white lg:text-[21px] ">
-                              We uphold the highest ethical honesty in all our interactions
-                          </p>
-                      </li>
-                  </ul>
-              </div>
-        </div>
-    </div>
-</section>
-<section id="section-team">
-    <div class="py-20 xl:py-[130px]  ">
-        <div class="container">
-            <div class="mb-10 flex flex-wrap items-center justify-between lg:mb-12 xl:mb-20 wow animate__animated animate__fadeInUp" data-wow-delay="0.5s" data-wow-duration="3s">
+    <header class="w-full bg-header z-50 bg-theme py-5 px-1">
+        <div class="container ">
+            <div class="flex items-center justify-between gap-x-8">
+                <a href="../index.html">
+                    <img src="../assets/image/logo-dark.png" alt="">
+                </a>
                 <div>
-                    <div class="max-w-sm lg:max-w-3xl xl:max-w-[745px]">
-                        <h2 >
-                            Our team consists of a group of talents
-                        </h2>
-                    </div>
-                </div>
-                <a href="" class="button mt-5 rounded-[50px] border-2 border-black bg-black py-4 text-white after:bg-orange-600 hover:border-orange-600 hover:text-white">
-                    Join Our Team
-                </a>
-            </div>
-            <ul class="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
-                <li class="rounded-[20px] bg-colorLinenRuffle p-[20px] wow animate__animated animate__flipInY" data-wow-delay="0.5s" data-wow-duration="3s">
-                    <div class="xl:h[300px] w-full overflow-hidden rounded-[20px] xl:h-[400px]">
-                        <img src="../assets/image/about/team-member-img-1.jpg" alt="">
-                    </div>
-                    <div class="mt-5">
-                        <a href="" class="font-dmSans text-[26px] leading-[1.33] hover:text-orange-600 xl:text-[30px] duration-300">
-                            Mr. Abraham Maslo
-                        </a>
-                        <div class="mt-3 flex flex-col justify-between gap-3 xl:flex-row xl:flex-wrap xl:items-center">
-                            <span class="text-2xl">
-                                Chief AI Officer
-                            </span>
-                            <ul class="mt-auto flex gap-x-[15px]">
-                                <li>
-                                    <a href="https://www.facebook.com/" class="group relative flex h-[30px] w-[30px] items-center justify-center rounded-[50%] bg-black hover:bg-orange-600 duration-500">
-                                        <img src="../assets/image/about/facebook-icon-white.svg" alt="" width="14" height="14" class="opacity-100 group-hover:opacity-0">
-                                        <img src="../assets/image/about/facebook-icon-black.svg" alt="" width="14" height="14" class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100">
-                                    </a>
-                                </li>
-                                <li><a href="https://www.facebook.com/" class="group relative flex h-[30px] w-[30px] items-center justify-center rounded-[50%] bg-black hover:bg-orange-600 duration-500">
-                                        <img src="../assets/image/about/twitter-icon-white.svg" alt="" width="14" height="14" class="opacity-100 group-hover:opacity-0">
-                                        <img src="../assets/image/about/twitter-icon-black.svg" alt="" width="14" height="14" class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100">
-                                    </a>
-                                </li>
-                                <li><a href="https://www.facebook.com/" class="group relative flex h-[30px] w-[30px] items-center justify-center rounded-[50%] bg-black hover:bg-orange-600 duration-500">
-                                        <img src="../assets/image/about/linkedin-icon-white.svg" alt="" width="14" height="14" class="opacity-100 group-hover:opacity-0">
-                                        <img src="../assets/image/about/linkedin-icon-black.svg" alt="" width="14" height="14" class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100">
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="https://www.facebook.com/" class="group relative flex h-[30px] w-[30px] items-center justify-center rounded-[50%] bg-black hover:bg-orange-600 duration-500">
-                                        <img src="../assets/image/about/instagram-icon-white.svg" alt="" width="14" height="14" class="opacity-100 group-hover:opacity-0">
-                                        <img src="../assets/image/about/instagram-icon-black.svg" alt="" width="14" height="14" class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100">
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </li>
-                <li class="rounded-[20px] bg-colorLinenRuffle p-[20px] wow animate__animated animate__flipInY" data-wow-delay="0.5s" data-wow-duration="3s">
-                    <div class="xl:h[300px] w-full overflow-hidden rounded-[20px] xl:h-[400px]">
-                        <img src="../assets/image/about/team-member-img-2.jpg" alt="">
-                    </div>
-                    <div class="mt-5">
-                        <a href="" class="font-dmSans text-[26px] leading-[1.33] hover:text-orange-600 xl:text-[30px] duration-300">
-                            Willium Robert
-                        </a>
-                        <div class="mt-3 flex flex-col justify-between gap-3 xl:flex-row xl:flex-wrap xl:items-center">
-                            <span class="text-2xl">
-                                Data Engineer
-                            </span>
-                            <ul class="mt-auto flex gap-x-[15px]">
-                                <li>
-                                    <a href="https://www.facebook.com/" class="group relative flex h-[30px] w-[30px] items-center justify-center rounded-[50%] bg-black hover:bg-orange-600 duration-500">
-                                        <img src="../assets/image/about/facebook-icon-white.svg" alt="" width="14" height="14" class="opacity-100 group-hover:opacity-0">
-                                        <img src="../assets/image/about/facebook-icon-black.svg" alt="" width="14" height="14" class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100">
-                                    </a>
-                                </li>
-                                <li><a href="https://www.facebook.com/" class="group relative flex h-[30px] w-[30px] items-center justify-center rounded-[50%] bg-black hover:bg-orange-600 duration-500">
-                                        <img src="../assets/image/about/twitter-icon-white.svg" alt="" width="14" height="14" class="opacity-100 group-hover:opacity-0">
-                                        <img src="../assets/image/about/twitter-icon-black.svg" alt="" width="14" height="14" class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100">
-                                    </a>
-                                </li>
-                                <li><a href="https://www.facebook.com/" class="group relative flex h-[30px] w-[30px] items-center justify-center rounded-[50%] bg-black hover:bg-orange-600 duration-500">
-                                        <img src="../assets/image/about/linkedin-icon-white.svg" alt="" width="14" height="14" class="opacity-100 group-hover:opacity-0">
-                                        <img src="../assets/image/about/linkedin-icon-black.svg" alt="" width="14" height="14" class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100">
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="https://www.facebook.com/" class="group relative flex h-[30px] w-[30px] items-center justify-center rounded-[50%] bg-black hover:bg-orange-600 duration-500">
-                                        <img src="../assets/image/about/instagram-icon-white.svg" alt="" width="14" height="14" class="opacity-100 group-hover:opacity-0">
-                                        <img src="../assets/image/about/instagram-icon-black.svg" alt="" width="14" height="14" class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100">
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </li>
-                <li class="rounded-[20px] bg-colorLinenRuffle p-[20px] wow animate__animated animate__flipInY" data-wow-delay="0.5s" data-wow-duration="3s">
-                    <div class="xl:h[300px] w-full overflow-hidden rounded-[20px] xl:h-[400px]">
-                        <img src="../assets/image/about/team-member-img-3.jpg" alt="">
-                    </div>
-                    <div class="mt-5">
-                        <a href="" class="font-dmSans text-[26px] leading-[1.33] hover:text-orange-600 xl:text-[30px] duration-300">
-                            Henry Fayol
-                        </a>
-                        <div class="mt-3 flex flex-col justify-between gap-3 xl:flex-row xl:flex-wrap xl:items-center">
-                            <span class="text-2xl">
-                                Research Scientist
-                            </span>
-                            <ul class="mt-auto flex gap-x-[15px]">
-                                <li>
-                                    <a href="https://www.facebook.com/" class="group relative flex h-[30px] w-[30px] items-center justify-center rounded-[50%] bg-black hover:bg-orange-600 duration-500">
-                                        <img src="../assets/image/about/facebook-icon-white.svg" alt="" width="14" height="14" class="opacity-100 group-hover:opacity-0">
-                                        <img src="../assets/image/about/facebook-icon-black.svg" alt="" width="14" height="14" class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100">
-                                    </a>
-                                </li>
-                                <li><a href="https://www.facebook.com/" class="group relative flex h-[30px] w-[30px] items-center justify-center rounded-[50%] bg-black hover:bg-orange-600 duration-500">
-                                        <img src="../assets/image/about/twitter-icon-white.svg" alt="" width="14" height="14" class="opacity-100 group-hover:opacity-0">
-                                        <img src="../assets/image/about/twitter-icon-black.svg" alt="" width="14" height="14" class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100">
-                                    </a>
-                                </li>
-                                <li><a href="https://www.facebook.com/" class="group relative flex h-[30px] w-[30px] items-center justify-center rounded-[50%] bg-black hover:bg-orange-600 duration-500">
-                                        <img src="../assets/image/about/linkedin-icon-white.svg" alt="" width="14" height="14" class="opacity-100 group-hover:opacity-0">
-                                        <img src="../assets/image/about/linkedin-icon-black.svg" alt="" width="14" height="14" class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100">
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="https://www.facebook.com/" class="group relative flex h-[30px] w-[30px] items-center justify-center rounded-[50%] bg-black hover:bg-orange-600 duration-500">
-                                        <img src="../assets/image/about/instagram-icon-white.svg" alt="" width="14" height="14" class="opacity-100 group-hover:opacity-0">
-                                        <img src="../assets/image/about/instagram-icon-black.svg" alt="" width="14" height="14" class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100">
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </li>
-                <li class="rounded-[20px] bg-colorLinenRuffle p-[20px] wow animate__animated animate__flipInY" data-wow-delay="0.5s" data-wow-duration="3s">
-                    <div class="xl:h[300px] w-full overflow-hidden rounded-[20px] xl:h-[400px]">
-                        <img src="../assets/image/about/team-member-img-4.jpg" alt="">
-                    </div>
-                    <div class="mt-5">
-                        <a href="" class="font-dmSans text-[26px] leading-[1.33] hover:text-orange-600 xl:text-[30px] duration-300">
-                            Henry Martine
-                        </a>
-                        <div class="mt-3 flex flex-col justify-between gap-3 xl:flex-row xl:flex-wrap xl:items-center">
-                            <span class="text-2xl">
-                                AI Researchers
-                            </span>
-                            <ul class="mt-auto flex gap-x-[15px]">
-                                <li>
-                                    <a href="https://www.facebook.com/" class="group relative flex h-[30px] w-[30px] items-center justify-center rounded-[50%] bg-black hover:bg-orange-600 duration-500">
-                                        <img src="../assets/image/about/facebook-icon-white.svg" alt="" width="14" height="14" class="opacity-100 group-hover:opacity-0">
-                                        <img src="../assets/image/about/facebook-icon-black.svg" alt="" width="14" height="14" class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100">
-                                    </a>
-                                </li>
-                                <li><a href="https://www.facebook.com/" class="group relative flex h-[30px] w-[30px] items-center justify-center rounded-[50%] bg-black hover:bg-orange-600 duration-500">
-                                        <img src="../assets/image/about/twitter-icon-white.svg" alt="" width="14" height="14" class="opacity-100 group-hover:opacity-0">
-                                        <img src="../assets/image/about/twitter-icon-black.svg" alt="" width="14" height="14" class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100">
-                                    </a>
-                                </li>
-                                <li><a href="https://www.facebook.com/" class="group relative flex h-[30px] w-[30px] items-center justify-center rounded-[50%] bg-black hover:bg-orange-600 duration-500">
-                                        <img src="../assets/image/about/linkedin-icon-white.svg" alt="" width="14" height="14" class="opacity-100 group-hover:opacity-0">
-                                        <img src="../assets/image/about/linkedin-icon-black.svg" alt="" width="14" height="14" class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100">
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="https://www.facebook.com/" class="group relative flex h-[30px] w-[30px] items-center justify-center rounded-[50%] bg-black hover:bg-orange-600 duration-500">
-                                        <img src="../assets/image/about/instagram-icon-white.svg" alt="" width="14" height="14" class="opacity-100 group-hover:opacity-0">
-                                        <img src="../assets/image/about/instagram-icon-black.svg" alt="" width="14" height="14" class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100">
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </li>
-                <li class="rounded-[20px] bg-colorLinenRuffle p-[20px] wow animate__animated animate__flipInY" data-wow-delay="0.5s" data-wow-duration="3s">
-                    <div class="xl:h[300px] w-full overflow-hidden rounded-[20px] xl:h-[400px]">
-                        <img src="../assets/image/about/team-member-img-5.jpg" alt="">
-                    </div>
-                    <div class="mt-5">
-                        <a href="" class="font-dmSans text-[26px] leading-[1.33] hover:text-orange-600 xl:text-[30px] duration-300">
-                            Jack Fox
-                        </a>
-                        <div class="mt-3 flex flex-col justify-between gap-3 xl:flex-row xl:flex-wrap xl:items-center">
-                            <span class="text-2xl">
-                                NLP Expert
-                            </span>
-                            <ul class="mt-auto flex gap-x-[15px]">
-                                <li>
-                                    <a href="https://www.facebook.com/" class="group relative flex h-[30px] w-[30px] items-center justify-center rounded-[50%] bg-black hover:bg-orange-600 duration-500">
-                                        <img src="../assets/image/about/facebook-icon-white.svg" alt="" width="14" height="14" class="opacity-100 group-hover:opacity-0">
-                                        <img src="../assets/image/about/facebook-icon-black.svg" alt="" width="14" height="14" class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100">
-                                    </a>
-                                </li>
-                                <li><a href="https://www.facebook.com/" class="group relative flex h-[30px] w-[30px] items-center justify-center rounded-[50%] bg-black hover:bg-orange-600 duration-500">
-                                        <img src="../assets/image/about/twitter-icon-white.svg" alt="" width="14" height="14" class="opacity-100 group-hover:opacity-0">
-                                        <img src="../assets/image/about/twitter-icon-black.svg" alt="" width="14" height="14" class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100">
-                                    </a>
-                                </li>
-                                <li><a href="https://www.facebook.com/" class="group relative flex h-[30px] w-[30px] items-center justify-center rounded-[50%] bg-black hover:bg-orange-600 duration-500">
-                                        <img src="../assets/image/about/linkedin-icon-white.svg" alt="" width="14" height="14" class="opacity-100 group-hover:opacity-0">
-                                        <img src="../assets/image/about/linkedin-icon-black.svg" alt="" width="14" height="14" class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100">
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="https://www.facebook.com/" class="group relative flex h-[30px] w-[30px] items-center justify-center rounded-[50%] bg-black hover:bg-orange-600 duration-500">
-                                        <img src="../assets/image/about/instagram-icon-white.svg" alt="" width="14" height="14" class="opacity-100 group-hover:opacity-0">
-                                        <img src="../assets/image/about/instagram-icon-black.svg" alt="" width="14" height="14" class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100">
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </li>
-                <li class="rounded-[20px] bg-colorLinenRuffle p-[20px] wow animate__animated animate__flipInY" data-wow-delay="0.5s" data-wow-duration="3s">
-                    <div class="xl:h[300px] w-full overflow-hidden rounded-[20px] xl:h-[400px]">
-                        <img src="../assets/image/about/team-member-img-6.jpg" alt="">
-                    </div>
-                    <div class="mt-5">
-                        <a href="" class="font-dmSans text-[26px] leading-[1.33] hover:text-orange-600 xl:text-[30px] duration-300">
-                            Adam Smith
-                        </a>
-                        <div class="mt-3 flex flex-col justify-between gap-3 xl:flex-row xl:flex-wrap xl:items-center">
-                            <span class="text-2xl">
-                                Project Manager
-                            </span>
-                            <ul class="mt-auto flex gap-x-[15px]">
-                                <li>
-                                    <a href="https://www.facebook.com/" class="group relative flex h-[30px] w-[30px] items-center justify-center rounded-[50%] bg-black hover:bg-orange-600 duration-500">
-                                        <img src="../assets/image/about/facebook-icon-white.svg" alt="" width="14" height="14" class="opacity-100 group-hover:opacity-0">
-                                        <img src="../assets/image/about/facebook-icon-black.svg" alt="" width="14" height="14" class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100">
-                                    </a>
-                                </li>
-                                <li><a href="https://www.facebook.com/" class="group relative flex h-[30px] w-[30px] items-center justify-center rounded-[50%] bg-black hover:bg-orange-600 duration-500">
-                                        <img src="../assets/image/about/twitter-icon-white.svg" alt="" width="14" height="14" class="opacity-100 group-hover:opacity-0">
-                                        <img src="../assets/image/about/twitter-icon-black.svg" alt="" width="14" height="14" class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100">
-                                    </a>
-                                </li>
-                                <li><a href="https://www.facebook.com/" class="group relative flex h-[30px] w-[30px] items-center justify-center rounded-[50%] bg-black hover:bg-orange-600 duration-500">
-                                        <img src="../assets/image/about/linkedin-icon-white.svg" alt="" width="14" height="14" class="opacity-100 group-hover:opacity-0">
-                                        <img src="../assets/image/about/linkedin-icon-black.svg" alt="" width="14" height="14" class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100">
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="https://www.facebook.com/" class="group relative flex h-[30px] w-[30px] items-center justify-center rounded-[50%] bg-black hover:bg-orange-600 duration-500">
-                                        <img src="../assets/image/about/instagram-icon-white.svg" alt="" width="14" height="14" class="opacity-100 group-hover:opacity-0">
-                                        <img src="../assets/image/about/instagram-icon-black.svg" alt="" width="14" height="14" class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100">
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </li>
-            </ul>
-        </div>
-    </div>
-</section>
-<section id="section-contact">
-    <div class="bg-black pb-40 pt-20 xl:pb-[200px] xl:pt-[130px]">
-        <div class="container">
-            <div class="grid grid-cols-1 items-center gap-14 md:grid-cols-[minmax(0,_1fr)_1.4fr]">
-                <div class="order-2 overflow-hidden rounded-[20px] md:order-1 wow animate__animated animate__fadeInLeft" data-wow-delay="0.5s" data-wow-duration="3s">
-                    <img src="../assets/image/about/about-contact-img.jpg" alt="">
-                </div>
-                <div class="order-1 md:order-2 wow animate__animated animate__fadeInDown" data-wow-delay="0.5s" data-wow-duration="3s">
-                    <div class="mb-6 md-max-w-max">
-                        <h2 class="text-white">
-                            We always want to connect our clients
-                        </h2>
-                    </div>
-                    <div class="text-left text-lg leading-[1.4] text-white lg:text-[21px]">
-                        <p class="mb-7 last:mb-0">
-                            AI accessible and beneficial for organizations, and we look forward to partnering with businesses to achieve their AI goals.
-                        </p>
-                    </div>
-                    <ul class="mt-10 flex flex-col gap-6 font-dmSans text-[30px] tracking-[1.33] lg:mt-14 lg:gap-y-3 xl:mt-[70px]">
-                        <li class="flex flex-col gap-x-2 leading-tight text-orange-600 font-semibold lg:flex-row lg:leading-normal ">
-                            Website:
-                            <a href="" class="text-white hover:text-orange-600 duration-500">www.example.com</a>
-                        </li>
-                        <li class="flex flex-col gap-x-2 leading-tight text-orange-600 font-semibold lg:flex-row lg:leading-normal ">
-                            Email:
-                            <a href="" class="text-white hover:text-orange-600 duration-500">yourmail@mail.com</a>
-                        </li>
-                        <li class="flex flex-col gap-x-2 leading-tight text-orange-600 font-semibold lg:flex-row lg:leading-normal ">
-                            Phone:
-                            <a href="" class="text-white hover:text-orange-600 duration-500">(123) 456-7890</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
+                    <nav class="hidden lg:flex items-center gap-x-12 font-semibold text-base justify-between">
+                        <ul class="flex gap-x-12 font-semibold text-base justify-between">
+                            <li>
+                                <div class="relative inline-block text-left">
+                                    <div class="relative group inline-block">
+                                        <button class="menu-button cursor-pointer rounded-md flex gap-1.5">
+                                            Demo
+                                            <img src="https://azzle.netlify.app/assets/img/icon-black-cheveron-right.svg"
+                                                alt="" width="16" height="16">
+                                        </button>
+                                        <div
+                                            class="absolute left-0 mt-2 w-48 bg-white rounded-md shadow-lg opacity-0 group-hover:opacity-100 invisible group-hover:visible transition-all duration-300 z-10 translate-y-2 group-hover:translate-y-0">
+                                            <div
+                                                class="absolute top-0 left-7 transform -translate-x-1/2 -translate-y-1/2 -z-10">
+                                                <div class="w-3 h-3 bg-white rotate-45 shadow-md"></div>
+                                            </div>
+                                            <!-- Menu dropdown -->
+                                            <div class="bg-white rounded-md shadow-lg z-10 py-3">
+                                                <a href="#"
+                                                    class="block px-4 py-2 text-gray-800 hover:text-orange-600 duration-500">Demo
+                                                    1</a>
+                                                <a href="#"
+                                                    class="block px-4 py-2 text-gray-800 hover:text-orange-600 duration-500">Demo
+                                                    2</a>
+                                                <a href="#"
+                                                    class="block px-4 py-2 text-gray-800 hover:text-orange-600 duration-500">Demo
+                                                    3</a>
+                                                <a href="#"
+                                                    class="block px-4 py-2 text-gray-800 hover:text-orange-600 duration-500">Demo
+                                                    4</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="">About</a>
+                            </li>
+                            <li>
+                                <div class="relative inline-block text-left">
+                                    <div class="relative group inline-block">
+                                        <button class="menu-button cursor-pointer rounded-md flex gap-1.5">
+                                            Services
+                                            <img src="https://azzle.netlify.app/assets/img/icon-black-cheveron-right.svg"
+                                                alt="" width="16" height="16">
+                                        </button>
+                                        <div
+                                            class="absolute left-0 mt-2 w-48 bg-white rounded-md shadow-lg opacity-0 group-hover:opacity-100 invisible group-hover:visible transition-all duration-300 z-10 translate-y-2 group-hover:translate-y-0">
+                                            <div
+                                                class="absolute top-0 left-7 transform -translate-x-1/2 -translate-y-1/2 -z-10">
+                                                <div class="w-3 h-3 bg-white rotate-45 shadow-md"></div>
+                                            </div>
+                                            <!-- Menu dropdown -->
+                                            <div class="bg-white rounded-md shadow-lg z-10 py-3">
+                                                <a href="#"
+                                                    class="block px-4 py-2 text-gray-800  hover:text-orange-600 duration-500">Services</a>
+                                                <a href="#"
+                                                    class="block px-4 py-2 text-gray-800  hover:text-orange-600 duration-500">Services
+                                                    Details</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
 
-<footer class="relative z-[1] -mt-[70px] overflow-hidden rounded-tl-[30px] rounded-tr-[30px] bg-colorLinenRuffle lg:rounded-tl-[50px] lg:rounded-tr-[50px]">
-    <div class="py-[60px] xl:pb-[100px] xl:pt-[130px]">
-        <div class="swiper w-full">
-            <div class="swiper-wrapper ease-linear ">
-                <div class="swiper-slide">
-                    <img src="https://azzle.netlify.app/assets/img/th-1/footer-text-slider-icon.svg" alt="" >
+                            <li>
+                                <div class="relative inline-block text-left">
+                                    <div class="relative group inline-block">
+                                        <button class="menu-button cursor-pointer rounded-md flex gap-1.5">
+                                            Pages
+                                            <img src="https://azzle.netlify.app/assets/img/icon-black-cheveron-right.svg"
+                                                alt="" width="16" height="16">
+                                        </button>
+                                        <div
+                                            class="absolute left-0 mt-2 w-48 bg-white rounded-md shadow-lg opacity-0 group-hover:opacity-100 invisible group-hover:visible transition-all duration-300 z-10 translate-y-2 group-hover:translate-y-0">
+                                            <div
+                                                class="absolute top-0 left-7 transform -translate-x-1/2 -translate-y-1/2 -z-10">
+                                                <div class="w-3 h-3 bg-white rotate-45 shadow-md"></div>
+                                            </div>
+                                            <!-- Menu dropdown -->
+                                            <div class="bg-white rounded-md shadow-lg z-10 py-3">
+                                                <div class="relative group/sub">
+                                                    <div
+                                                        class="flex justify-between items-center px-4 py-2  cursor-pointer hover:text-orange-600 duration-500">
+                                                        Blogs
+                                                        <svg class="w-3 h-3 ml-2" fill="none" stroke="currentColor"
+                                                            stroke-width="2" viewBox="0 0 24 24">
+                                                            <path d="M9 5l7 7-7 7" />
+                                                        </svg>
+                                                    </div>
+
+                                                    <!-- Submenu -->
+                                                    <div
+                                                        class="absolute left-full top-0 mt-0 w-48 bg-white rounded-md shadow-lg opacity-0 invisible group-hover/sub:visible group-hover/sub:opacity-100 transition duration-200 z-30 py-3">
+                                                        <a href="#"
+                                                            class="block px-4 py-2 hover:text-orange-600 duration-500">Blogs</a>
+                                                        <a href="#"
+                                                            class="block px-4 py-2 hover:text-orange-600 duration-500">Blogs
+                                                            Details</a>
+                                                    </div>
+                                                </div>
+                                                <div class="relative group/sub">
+                                                    <div
+                                                        class="flex justify-between items-center px-4 py-2  cursor-pointer hover:text-orange-600 duration-500">
+                                                        Team
+                                                        <svg class="w-3 h-3 ml-2" fill="none" stroke="currentColor"
+                                                            stroke-width="2" viewBox="0 0 24 24">
+                                                            <path d="M9 5l7 7-7 7" />
+                                                        </svg>
+                                                    </div>
+
+                                                    <!-- Submenu -->
+                                                    <div
+                                                        class="absolute left-full top-0 mt-0 w-48 bg-white rounded-md shadow-lg opacity-0 invisible group-hover/sub:visible group-hover/sub:opacity-100 transition duration-200 z-30 py-3">
+                                                        <a href="#"
+                                                            class="block px-4 py-2 hover:text-orange-600 duration-500">Teams</a>
+                                                        <a href="#"
+                                                            class="block px-4 py-2 hover:text-orange-600 duration-500">Teams
+                                                            Detail</a>
+                                                    </div>
+                                                </div>
+                                                <div class="relative group/sub">
+                                                    <div
+                                                        class="flex justify-between items-center px-4 py-2  cursor-pointer hover:text-orange-600 duration-500">
+                                                        FAQ
+                                                        <svg class="w-3 h-3 ml-2" fill="none" stroke="currentColor"
+                                                            stroke-width="2" viewBox="0 0 24 24">
+                                                            <path d="M9 5l7 7-7 7" />
+                                                        </svg>
+                                                    </div>
+
+                                                    <!-- Submenu -->
+                                                    <div
+                                                        class="absolute left-full top-0 mt-0 w-48 bg-white rounded-md shadow-lg opacity-0 invisible group-hover/sub:visible group-hover/sub:opacity-100 transition duration-200 z-30 py-3">
+                                                        <a href="#"
+                                                            class="block px-4 py-2 hover:text-orange-600 duration-500">FAQ
+                                                            1</a>
+                                                        <a href="#"
+                                                            class="block px-4 py-2 hover:text-orange-600 duration-500">FAQ
+                                                            2</a>
+                                                    </div>
+                                                </div>
+                                                <div class="relative group/sub">
+                                                    <div
+                                                        class="flex justify-between items-center px-4 py-2  cursor-pointer hover:text-orange-600 duration-500 ">
+                                                        Portfolio
+                                                        <svg class="w-3 h-3 ml-2" fill="none" stroke="currentColor"
+                                                            stroke-width="2" viewBox="0 0 24 24">
+                                                            <path d="M9 5l7 7-7 7" />
+                                                        </svg>
+                                                    </div>
+
+                                                    <!-- Submenu -->
+                                                    <div
+                                                        class="absolute left-full top-0 mt-0 w-48 bg-white rounded-md shadow-lg opacity-0 invisible group-hover/sub:visible group-hover/sub:opacity-100 transition duration-200 z-30 py-3">
+                                                        <a href="#"
+                                                            class="block px-4 py-2 hover:text-orange-600 duration-500">Portfolio
+                                                            1</a>
+                                                        <a href="#"
+                                                            class="block px-4 py-2 hover:text-orange-600 duration-500">Portfolio
+                                                            2</a>
+                                                    </div>
+                                                </div>
+                                                <a href="#"
+                                                    class="block px-4 py-2 hover:text-orange-600 duration-500">Pricing</a>
+                                                <div class="relative group/sub">
+                                                    <div
+                                                        class="flex justify-between items-center px-4 py-2  cursor-pointer hover:text-orange-600 duration-500">
+                                                        Utilities
+                                                        <svg class="w-3 h-3 ml-2" fill="none" stroke="currentColor"
+                                                            stroke-width="2" viewBox="0 0 24 24">
+                                                            <path d="M9 5l7 7-7 7" />
+                                                        </svg>
+                                                    </div>
+
+                                                    <!-- Submenu -->
+                                                    <div
+                                                        class="absolute left-full top-0 mt-0 w-48 bg-white rounded-md shadow-lg opacity-0 invisible group-hover/sub:visible group-hover/sub:opacity-100 transition duration-200 z-30 py-3">
+                                                        <a href="#"
+                                                            class="block px-4 py-2 hover:text-orange-600 duration-500">Error
+                                                            404</a>
+                                                        <a href="#"
+                                                            class="block px-4 py-2 hover:text-orange-600 duration-500">Log
+                                                            In</a>
+                                                        <a href="#"
+                                                            class="block px-4 py-2 hover:text-orange-600 duration-500">Sign
+                                                            Up</a>
+                                                        <a href="#"
+                                                            class="block px-4 py-2 hover:text-orange-600 duration-500">Reset
+                                                            Password</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li>
+                                <a href="">Contact</a>
+                            </li>
+                        </ul>
+                    </nav>
                 </div>
-                <div class="swiper-slide block font-dmSans text-4xl font-bold leading-none -tracking-[2px] text-black lg:text-6xl xl:text-7xl xl:text-[80px]">
-                    <div class=" text-gray-800">Start building software</div>
+                <div class="flex items-center gap-6 hidden md:flex">
+                    <button type="button"
+                        class="button text-4xl focus:outline-none rounded-full text-sm font-medium border border-gray-300 px-5 py-2.5 me-2 mb-2  hover:text-white duration-500 after:bg-orange-600"><a
+                            href="">Log in</a></button>
+                    <button type="button"
+                        class="button text-4xl focus:outline-none rounded-full text-sm font-medium border text-white bg-black  border-gray-300 px-5 py-2.5 me-2 mb-2  hover:text-white duration-500 after:bg-orange-600"><a
+                            href="">Sign Up Free</a></button>
                 </div>
-                <div class="swiper-slide">
-                    <img src="https://azzle.netlify.app/assets/img/th-1/footer-text-slider-icon.svg" alt="" class="" >
-                </div>
-                <div class="swiper-slide block font-dmSans text-4xl font-bold leading-none -tracking-[2px] text-black lg:text-6xl xl:text-7xl xl:text-[80px]">
-                    <div class=" text-gray-800">Start building software</div>
-                </div>
-                <div class="swiper-slide">
-                    <img src="https://azzle.netlify.app/assets/img/th-1/footer-text-slider-icon.svg" alt="" >
-                </div>
-                <div class="swiper-slide block font-dmSans text-4xl font-bold leading-none -tracking-[2px] text-black lg:text-6xl xl:text-7xl xl:text-[80px]">
-                    <div class=" text-gray-800">Start building software</div>
-                </div><div class="swiper-slide">
-                <img src="https://azzle.netlify.app/assets/img/th-1/footer-text-slider-icon.svg" alt="" >
-            </div>
-                <!-- thêm nhiều slide tùy ý -->
-            </div>
-        </div>
-    </div>
-    <div class="container mx-auto">
-        <div class="flex gap-10">
-            <div class="basis-2/6 flex flex-col gap-y-6">
-                <img src="../assets/image/logo-dark.png" alt="" width="96" height="24">
-                <p>
-                    Our mission is to harness the power of AI to solve complex business challenges & decision-makers with data-driven insights, and enhance user experiences across digital platforms.
-                </p>Website:
-                <a href="">
-                    www.example.com
-                </a>
-            </div>
-            <div class="basis-1/6 flex flex-col gap-y-6">
-                <h4 class="font-semibold text-[21px] capitalize text-black">
-                    Primary Pages
-                </h4>
-                <ul class="flex flex-col gap-y-[10px] capitalize">
-                    <li><a href="">Home</a></li>
-                    <li><a href="">About Us</a></li>
-                    <li><a href="">Services</a></li>
-                    <li><a href="">Pricing</a></li>
-                    <li><a href="">Contact</a></li>
-                </ul>
-            </div>
-            <div class="basis-1/6 flex flex-col gap-y-6">
-                <h4 class="font-semibold text-[21px] capitalize text-black">
-                    Utility Pages
-                </h4>
-                <ul class="flex flex-col gap-y-[10px] capitalize">
-                    <li><a href="">Sign Up</a></li>
-                    <li><a href="">Login</a></li>
-                    <li><a href="">404 Not Found</a></li>
-                    <li><a href="">Password Reset</a></li>
-                </ul>
-            </div>
-            <div class="flex flex-col gap-y-[10px] capitalize">
-                <h4 class="text-[21px] font-semibold capitalize text-black">
-                    Subscribe to our newsletter
-                </h4>
-                <div class="relative h-12 max-w-80">
-                    <input placeholder="Enter your Email" type="text" class="p-y-[18px] h-full w-full rounded-[50px] border-[1px] border-black px-[24px] pr-20 outline-none">
-                    <button class="absolute right-[5px] top-[50%] inline-block h-10 -translate-y-[50%] rounded-[50px] bg-black px-6 transition-all hover:bg-orange-500">
-                        <img src="https://azzle.netlify.app/assets/img/th-1/arrow-right-large.svg" alt="">
+                <div>
+                    <button class="md:hidden text-gray-600 focus:outline-none" onclick="toggleSidebar()">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
                     </button>
                 </div>
             </div>
         </div>
-        <div class=" h-[1px] w-full  bg-[#DBD6CF] ">
+    </header>
+    <div id="sidebar"
+        class=" fixed top-0 left-0 h-full w-64 bg-white shadow-lg transform -translate-x-full transition-transform duration-300 ease-in-out z-50 md:hidden">
+        <div class="px-6 py-4 flex justify-between items-center ">
+            <span class="text-lg font-semibold text-gray-800"></span>
+            <button onclick="toggleSidebar()">
+                <svg class="w-5 h-5 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                </svg>
+            </button>
         </div>
-        <div class=" w-full py-9 text-center">
-            © Copyright 2023, All Rights Reserved by Mthemeus
-        </div>
+        <nav class="px-6 py-4 space-y-2 font-semibold grid  grid-rows-6 gap-2 text-gray-800">
+            <a href="#" class="block  hover:text-blue-500">Home</a>
+            <div class="flex  gap-y-2">
+                <button onclick="openSubmenu('demos')" class="w-full text-left flex  hover:text-blue-500">Demo</button>
+                <img src="../assets/image/about/icon-black-cheveron-right.svg" alt="">
+            </div>
+            <a href="../partials/about.html"> About </a>
+            <div class="flex  gap-y-2">
+                <button onclick="openSubmenu('services')" class="w-full text-left    hover:text-blue-500">Services
+                </button>
+                <img src="../assets/image/about/icon-black-cheveron-right.svg" alt="">
+            </div>
+            <div class="flex  gap-y-2">
+                <button onclick="openSubmenu('pages')" class="w-full text-left  hover:text-blue-500">Pages
+                </button>
+                <img src="../assets/image/about/icon-black-cheveron-right.svg" alt="">
+            </div>
+            <a href="#" class="block  hover:text-blue-500">Contact</a>
+        </nav>
     </div>
-    <div class="orange-gradient-2 absolute -top-[290px] right-[90px] -z-[1] h-[406px] w-[406px] -rotate-[58deg] rounded-[406px]"></div>
-    <div class="orange-gradient-1 absolute -right-[200px] -top-[205px] -z-[1] h-[451px] w-[451px] -rotate-[58deg] rounded-[451px]"></div>
-</footer>
-<script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-<script>
-    // Dropdown Menu JS
-    const dropdownButton = document.getElementById('menu-button');
-    const dropdownMenu = document.getElementById('dropdownMenu');
-    dropdownButton.addEventListener('click', () => {
-        dropdownMenu.classList.toggle('hidden');
-    });
-</script>
-<script>
-    const swiper = new Swiper('.swiper', {
-        loop: true,
-        slidesPerView: 6,
-        spaceBetween: 30,
-        speed: 8000,
-        autoplay: {
-            delay: 1,
-            disableOnInteraction: true,
-        },
-        freeMode: true,
-        freeModeMomentum: false
-    });
-</script>
-<script src="../libs/wowjs/wow.min.js"></script>
-<script>
-    new WOW().init();
-</script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.js" integrity="sha512-+k1pnlgt4F1H8L7t3z95o3/KO+o78INEcXTbnoJQ/F2VqDVhWoaiVml/OEHv9HsVgxUaVW+IbiZPUJQfF/YxZw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js" integrity="sha512-ZKNVEa7gi0Dz4Rq9jXcySgcPiK+5f01CqW+ZoKLLKr9VMXuCsw3RjWiv8ZpIOa0hxO79np7Ec8DDWALM0bDOaQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-<script src="../libs/count-up/jquery.counterup.min.js"></script>
-<script>
-    $(document).ready(function () {
-        $('.counter').counterUp({
-            delay: 10, // Delay in milliseconds
-            time: 1000 // Total duration of the animation in milliseconds
-        });
-    });
-</script>
-<script>
-    function toggleSidebar() {
-        const sidebar = document.getElementById("sidebar");
-        sidebar.classList.toggle("-translate-x-full");
-    }
-    function openSubmenu(menu) {
-        document.getElementById(`submenu-${menu}`).classList.remove("translate-x-64");
-    }
 
-    function closeSubmenu(menu) {
-        document.getElementById(`submenu-${menu}`).classList.add("translate-x-64");
-    }
-</script>
+
+
+    <section id="section-breadcrumb" class="bg-theme rounded-b-[50px]">
+        <div class="mb-[128px] pt-[195px] pb-[130px] ">
+            <div class="container  max-w-[1332px]">
+                <div class="text-center">
+                    <h1 class="mx-auto mb-8 max-w-[500ox] ">
+                        About Us
+                    </h1>
+                    <ul class=" font-semibold flex flex-wrap items-center justify-center gap-x-6 text-xl leading-3 ">
+                        <li><a href="../index.html" class="hover:text-orange-600 duration-500">Home</a></li>
+                        <li>
+                            <img src="https://azzle.netlify.app/assets/img/cheveron-right.svg" alt="">
+                        </li>
+                        <li class="text-orange-600">About</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="section-hero">
+        <div class="mb-[5rem] lg:mb-[6rem]">
+            <div class="container">
+                <div class="mb-10 text-center lg:mb-12 xl:mb-[5rem] mb-12 wow animate__animated animate__fadeInUp"
+                    data-wow-duration="3s" data-wow-delay="0.5s">
+                    <div class="mx-auto md:max-w-xl lg:max-w-3xl xl:max-w-[950px]">
+                        <h2 class="font-semibold ">
+                            We are a trusted partner in our clients' AI journey
+                        </h2>
+                    </div>
+                </div>
+                <div class="overflow-hidden rounded-3xl wow animate__animated animate__zoomIn" data-wow-duration="3s"
+                    data-wow-delay="0.5s">
+                    <img src="../assets/image/about/about-hero-image.png" alt="" class="h-full w-full object-cover">
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+    <section id="section-funfact">
+        <div class="container">
+            <ul class="grid grid-cols-1 gap-10 gap-y-5 text-center sm:grid-cols-2 sm:text-left lg:grid-cols-4">
+                <li class="wow animate__animated animate__fadeInUp" data-wow-delay="0.1s" data-wow-duration="2s">
+                    <h3 class="text-5xl text-orange-600 md:text-6xl lg:text-7xl xl:text-[90px] font-semibold">
+                        <span class="counter">2</span>
+                        K+
+                    </h3>
+                    <span>Successful Implementations</span>
+                </li>
+                <li class="wow animate__animated animate__fadeInUp" data-wow-delay="0.2s" data-wow-duration="2s">
+                    <h3 class="text-5xl text-orange-600 md:text-6xl lg:text-7xl xl:text-[90px] font-semibold">
+                        <span class="counter">95</span>%
+                    </h3>
+                    <span>Client Satisfaction Rate</span>
+                </li>
+                <li class="wow animate__animated animate__fadeInUp" data-wow-delay="0.3s" data-wow-duration="2s">
+                    <h3 class="text-5xl text-orange-600 md:text-6xl lg:text-7xl xl:text-[90px] font-semibold">
+                        <span class="counter">40</span>+
+                    </h3>
+                    <span>Awards and Recognitions</span>
+                </li>
+                <li class="wow animate__animated animate__fadeInUp" data-wow-delay="0.4s" data-wow-duration="2s">
+                    <h3 class="text-5xl text-orange-600 md:text-6xl lg:text-7xl xl:text-[90px] font-semibold">
+                        <span class="counter">73</span>+
+                    </h3>
+                    <span class="block text-lg ">Growth and Expansion</span>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <section id="section-content">
+        <div class="pb-20 pt-20 xl:pb-[150px] xl:pt-[130px]">
+            <div class="container">
+                <div class="grid grid-cols-1 gap-12 items-center md:grid-cols-2 xl:grid-cols-[minmax(0,_1.3fr)_1fr]">
+                    <div class="overflow-hidden rounded-md wow animate__animated animate__fadeInLeft"
+                        data-wow-delay="0.5s" data-wow-duration="2s">
+                        <div class="mb-6">
+                            <h2>
+                                Delivering the best solutions with AI
+                            </h2>
+                        </div>
+                        <div class="text-lg leading-[1.4] lg:text-[21px]">
+                            <p class="mb-7 last:mb-0">
+                                Our mission is to empower businesses with AI-powered solutions that increase
+                                productivity, improve decision-making and drive growth.
+                            </p>
+                            <p class="mb-7 last:mb-0">
+                                Since 2016 we have been passionate about helping our clients harness With a team of AI
+                                experts and data scientists their full potential & stay competitive in an increasingly
+                                digital world.
+                            </p>
+                            <button
+                                class="button mt-5 rounded-4xl border-2 text-white border-black bg-black font-semibold duration-500 hover:text-white after:border-b-orange-600 after:bg-orange-600 ">
+                                Get in touch
+                            </button>
+                        </div>
+                    </div>
+                    <div class="overflow-hidden rounded-md wow animate__animated animate__fadeInRight"
+                        data-wow-delay="0.5s" data-wow-duration="2s">
+                        <img src="../assets/image/about/about-image.png" alt="" class="h-auto w-full">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <section id="section-core-value">
+        <div class="mx-5 rounded-[50px] bg-black px-[20px] py-20 sm:px-[50px] md:mx-[50px] lg:px-[100px] xl:py-[130px] wow animate__animated animate__fadeInUp"
+            data-wow-delay="0.5s" data-wow-duration="3s">
+            <div class="container">
+                <div class="mb-10 text-center lg">
+                    <div class="mx-auto text-center lg:mb-12 xl:mb-20">
+                        <div class="mx-auto md:max-w-xl lg:max-w-3xl xl:max-w-[745px]">
+                            <h2 class="text-white">
+                                The core values behind our work
+                            </h2>
+                        </div>
+                    </div>
+                    <div class="mb-6 h-[4px] w-full rounded bg-colorCodGray sm:mb-0"></div>
+                    <ul class="grid grid-cols-1 justify-between gap-6 md:grid-cols-2 xl:flex xl:flex-nowrap text-left">
+                        <li
+                            class="relative after:absolute after:-top-[3px] after:left-0 after:h-[5px] after:w-full after:scale-x-0 after:rounded-[5px] after:bg-orange-600 after:transition-all after:duration-300 hover:after:scale-x-0 sm:pt-6 lg:pt-10 xl:hover:after:scale-x-100">
+                            <div class="mb-3 flex items-center gap-x-3 md:mb-6">
+                                <div class="h-[30px] w-[30px]">
+                                    <img src="../assets/image/about/core-value-icon-1.svg" alt="" width="30"
+                                        height="30">
+                                </div>
+                                <h4 class="text-white flex-1">
+                                    Innovation
+                                </h4>
+                            </div>
+                            <p class="text-lg text-white lg:text-[21px] ">
+                                We’re committed to exploring new technologies, and finding
+                            </p>
+                        </li>
+                        <li
+                            class="relative after:absolute after:-top-[3px] after:left-0 after:h-[5px] after:w-full after:scale-x-0 after:rounded-[5px] after:bg-orange-600 after:transition-all after:duration-300 hover:after:scale-x-0 sm:pt-6 lg:pt-10 xl:hover:after:scale-x-100">
+                            <div class="mb-3 flex items-center gap-x-3 md:mb-6">
+                                <div class="h-[30px] w-[30px]">
+                                    <img src="../assets/image/about/core-value-icon-2.svg" alt="" width="30"
+                                        height="30">
+                                </div>
+                                <h4 class="text-white flex-1">
+                                    Excellence
+                                </h4>
+                            </div>
+                            <p class="text-lg text-white lg:text-[21px] ">
+                                We set high standards for our work & we are dedicated team
+                            </p>
+                        </li>
+                        <li
+                            class="relative after:absolute after:-top-[3px] after:left-0 after:h-[5px] after:w-full after:scale-x-0 after:rounded-[5px] after:bg-orange-600 after:transition-all after:duration-300 hover:after:scale-x-0 sm:pt-6 lg:pt-10 xl:hover:after:scale-x-100 ">
+                            <div class="mb-3 flex items-center gap-x-3 md:mb-6">
+                                <div class="h-[30px] w-[30px]">
+                                    <img src="../assets/image/about/core-value-icon-3.svg" alt="" width="30"
+                                        height="30">
+                                </div>
+                                <h4 class="text-white flex-1">
+                                    Collaboration
+                                </h4>
+                            </div>
+                            <p class="text-lg text-white lg:text-[21px] ">
+                                We believe in the power of collaboration, working closely
+                            </p>
+                        </li>
+                        <li
+                            class="relative after:absolute after:-top-[3px] after:left-0 after:h-[5px] after:w-full after:scale-x-0 after:rounded-[5px] after:bg-orange-600 after:transition-all after:duration-300 hover:after:scale-x-0 sm:pt-6 lg:pt-10 xl:hover:after:scale-x-100">
+                            <div class="mb-3 flex items-center gap-x-3 md:mb-6">
+                                <div class="h-[30px] w-[30px]">
+                                    <img src="../assets/image/about/core-value-icon-4.svg" alt="" width="30"
+                                        height="30">
+                                </div>
+                                <h4 class="text-white flex-1">
+                                    Integrity
+                                </h4>
+                            </div>
+                            <p class="text-lg text-white lg:text-[21px] ">
+                                We uphold the highest ethical honesty in all our interactions
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="section-team">
+        <div class="py-20 xl:py-[130px]  ">
+            <div class="container">
+                <div class="mb-10 flex flex-wrap items-center justify-between lg:mb-12 xl:mb-20 wow animate__animated animate__fadeInUp"
+                    data-wow-delay="0.5s" data-wow-duration="3s">
+                    <div>
+                        <div class="max-w-sm lg:max-w-3xl xl:max-w-[745px]">
+                            <h2>
+                                Our team consists of a group of talents
+                            </h2>
+                        </div>
+                    </div>
+                    <a href=""
+                        class="button mt-5 rounded-[50px] border-2 border-black bg-black py-4 text-white after:bg-orange-600 hover:border-orange-600 hover:text-white">
+                        Join Our Team
+                    </a>
+                </div>
+                <ul class="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
+                    <li class="rounded-[20px] bg-colorLinenRuffle p-[20px] wow animate__animated animate__flipInY"
+                        data-wow-delay="0.5s" data-wow-duration="3s">
+                        <div class="xl:h[300px] w-full overflow-hidden rounded-[20px] xl:h-[400px]">
+                            <img src="../assets/image/about/team-member-img-1.jpg" alt="">
+                        </div>
+                        <div class="mt-5">
+                            <a href=""
+                                class="font-dmSans text-[26px] leading-[1.33] hover:text-orange-600 xl:text-[30px] duration-300">
+                                Mr. Abraham Maslo
+                            </a>
+                            <div
+                                class="mt-3 flex flex-col justify-between gap-3 xl:flex-row xl:flex-wrap xl:items-center">
+                                <span class="text-2xl">
+                                    Chief AI Officer
+                                </span>
+                                <ul class="mt-auto flex gap-x-[15px]">
+                                    <li>
+                                        <a href="https://www.facebook.com/"
+                                            class="group relative flex h-[30px] w-[30px] items-center justify-center rounded-[50%] bg-black hover:bg-orange-600 duration-500">
+                                            <img src="../assets/image/about/facebook-icon-white.svg" alt="" width="14"
+                                                height="14" class="opacity-100 group-hover:opacity-0">
+                                            <img src="../assets/image/about/facebook-icon-black.svg" alt="" width="14"
+                                                height="14"
+                                                class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100">
+                                        </a>
+                                    </li>
+                                    <li><a href="https://www.facebook.com/"
+                                            class="group relative flex h-[30px] w-[30px] items-center justify-center rounded-[50%] bg-black hover:bg-orange-600 duration-500">
+                                            <img src="../assets/image/about/twitter-icon-white.svg" alt="" width="14"
+                                                height="14" class="opacity-100 group-hover:opacity-0">
+                                            <img src="../assets/image/about/twitter-icon-black.svg" alt="" width="14"
+                                                height="14"
+                                                class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100">
+                                        </a>
+                                    </li>
+                                    <li><a href="https://www.facebook.com/"
+                                            class="group relative flex h-[30px] w-[30px] items-center justify-center rounded-[50%] bg-black hover:bg-orange-600 duration-500">
+                                            <img src="../assets/image/about/linkedin-icon-white.svg" alt="" width="14"
+                                                height="14" class="opacity-100 group-hover:opacity-0">
+                                            <img src="../assets/image/about/linkedin-icon-black.svg" alt="" width="14"
+                                                height="14"
+                                                class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.facebook.com/"
+                                            class="group relative flex h-[30px] w-[30px] items-center justify-center rounded-[50%] bg-black hover:bg-orange-600 duration-500">
+                                            <img src="../assets/image/about/instagram-icon-white.svg" alt="" width="14"
+                                                height="14" class="opacity-100 group-hover:opacity-0">
+                                            <img src="../assets/image/about/instagram-icon-black.svg" alt="" width="14"
+                                                height="14"
+                                                class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100">
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="rounded-[20px] bg-colorLinenRuffle p-[20px] wow animate__animated animate__flipInY"
+                        data-wow-delay="0.5s" data-wow-duration="3s">
+                        <div class="xl:h[300px] w-full overflow-hidden rounded-[20px] xl:h-[400px]">
+                            <img src="../assets/image/about/team-member-img-2.jpg" alt="">
+                        </div>
+                        <div class="mt-5">
+                            <a href=""
+                                class="font-dmSans text-[26px] leading-[1.33] hover:text-orange-600 xl:text-[30px] duration-300">
+                                Willium Robert
+                            </a>
+                            <div
+                                class="mt-3 flex flex-col justify-between gap-3 xl:flex-row xl:flex-wrap xl:items-center">
+                                <span class="text-2xl">
+                                    Data Engineer
+                                </span>
+                                <ul class="mt-auto flex gap-x-[15px]">
+                                    <li>
+                                        <a href="https://www.facebook.com/"
+                                            class="group relative flex h-[30px] w-[30px] items-center justify-center rounded-[50%] bg-black hover:bg-orange-600 duration-500">
+                                            <img src="../assets/image/about/facebook-icon-white.svg" alt="" width="14"
+                                                height="14" class="opacity-100 group-hover:opacity-0">
+                                            <img src="../assets/image/about/facebook-icon-black.svg" alt="" width="14"
+                                                height="14"
+                                                class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100">
+                                        </a>
+                                    </li>
+                                    <li><a href="https://www.facebook.com/"
+                                            class="group relative flex h-[30px] w-[30px] items-center justify-center rounded-[50%] bg-black hover:bg-orange-600 duration-500">
+                                            <img src="../assets/image/about/twitter-icon-white.svg" alt="" width="14"
+                                                height="14" class="opacity-100 group-hover:opacity-0">
+                                            <img src="../assets/image/about/twitter-icon-black.svg" alt="" width="14"
+                                                height="14"
+                                                class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100">
+                                        </a>
+                                    </li>
+                                    <li><a href="https://www.facebook.com/"
+                                            class="group relative flex h-[30px] w-[30px] items-center justify-center rounded-[50%] bg-black hover:bg-orange-600 duration-500">
+                                            <img src="../assets/image/about/linkedin-icon-white.svg" alt="" width="14"
+                                                height="14" class="opacity-100 group-hover:opacity-0">
+                                            <img src="../assets/image/about/linkedin-icon-black.svg" alt="" width="14"
+                                                height="14"
+                                                class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.facebook.com/"
+                                            class="group relative flex h-[30px] w-[30px] items-center justify-center rounded-[50%] bg-black hover:bg-orange-600 duration-500">
+                                            <img src="../assets/image/about/instagram-icon-white.svg" alt="" width="14"
+                                                height="14" class="opacity-100 group-hover:opacity-0">
+                                            <img src="../assets/image/about/instagram-icon-black.svg" alt="" width="14"
+                                                height="14"
+                                                class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100">
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="rounded-[20px] bg-colorLinenRuffle p-[20px] wow animate__animated animate__flipInY"
+                        data-wow-delay="0.5s" data-wow-duration="3s">
+                        <div class="xl:h[300px] w-full overflow-hidden rounded-[20px] xl:h-[400px]">
+                            <img src="../assets/image/about/team-member-img-3.jpg" alt="">
+                        </div>
+                        <div class="mt-5">
+                            <a href=""
+                                class="font-dmSans text-[26px] leading-[1.33] hover:text-orange-600 xl:text-[30px] duration-300">
+                                Henry Fayol
+                            </a>
+                            <div
+                                class="mt-3 flex flex-col justify-between gap-3 xl:flex-row xl:flex-wrap xl:items-center">
+                                <span class="text-2xl">
+                                    Research Scientist
+                                </span>
+                                <ul class="mt-auto flex gap-x-[15px]">
+                                    <li>
+                                        <a href="https://www.facebook.com/"
+                                            class="group relative flex h-[30px] w-[30px] items-center justify-center rounded-[50%] bg-black hover:bg-orange-600 duration-500">
+                                            <img src="../assets/image/about/facebook-icon-white.svg" alt="" width="14"
+                                                height="14" class="opacity-100 group-hover:opacity-0">
+                                            <img src="../assets/image/about/facebook-icon-black.svg" alt="" width="14"
+                                                height="14"
+                                                class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100">
+                                        </a>
+                                    </li>
+                                    <li><a href="https://www.facebook.com/"
+                                            class="group relative flex h-[30px] w-[30px] items-center justify-center rounded-[50%] bg-black hover:bg-orange-600 duration-500">
+                                            <img src="../assets/image/about/twitter-icon-white.svg" alt="" width="14"
+                                                height="14" class="opacity-100 group-hover:opacity-0">
+                                            <img src="../assets/image/about/twitter-icon-black.svg" alt="" width="14"
+                                                height="14"
+                                                class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100">
+                                        </a>
+                                    </li>
+                                    <li><a href="https://www.facebook.com/"
+                                            class="group relative flex h-[30px] w-[30px] items-center justify-center rounded-[50%] bg-black hover:bg-orange-600 duration-500">
+                                            <img src="../assets/image/about/linkedin-icon-white.svg" alt="" width="14"
+                                                height="14" class="opacity-100 group-hover:opacity-0">
+                                            <img src="../assets/image/about/linkedin-icon-black.svg" alt="" width="14"
+                                                height="14"
+                                                class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.facebook.com/"
+                                            class="group relative flex h-[30px] w-[30px] items-center justify-center rounded-[50%] bg-black hover:bg-orange-600 duration-500">
+                                            <img src="../assets/image/about/instagram-icon-white.svg" alt="" width="14"
+                                                height="14" class="opacity-100 group-hover:opacity-0">
+                                            <img src="../assets/image/about/instagram-icon-black.svg" alt="" width="14"
+                                                height="14"
+                                                class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100">
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="rounded-[20px] bg-colorLinenRuffle p-[20px] wow animate__animated animate__flipInY"
+                        data-wow-delay="0.5s" data-wow-duration="3s">
+                        <div class="xl:h[300px] w-full overflow-hidden rounded-[20px] xl:h-[400px]">
+                            <img src="../assets/image/about/team-member-img-4.jpg" alt="">
+                        </div>
+                        <div class="mt-5">
+                            <a href=""
+                                class="font-dmSans text-[26px] leading-[1.33] hover:text-orange-600 xl:text-[30px] duration-300">
+                                Henry Martine
+                            </a>
+                            <div
+                                class="mt-3 flex flex-col justify-between gap-3 xl:flex-row xl:flex-wrap xl:items-center">
+                                <span class="text-2xl">
+                                    AI Researchers
+                                </span>
+                                <ul class="mt-auto flex gap-x-[15px]">
+                                    <li>
+                                        <a href="https://www.facebook.com/"
+                                            class="group relative flex h-[30px] w-[30px] items-center justify-center rounded-[50%] bg-black hover:bg-orange-600 duration-500">
+                                            <img src="../assets/image/about/facebook-icon-white.svg" alt="" width="14"
+                                                height="14" class="opacity-100 group-hover:opacity-0">
+                                            <img src="../assets/image/about/facebook-icon-black.svg" alt="" width="14"
+                                                height="14"
+                                                class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100">
+                                        </a>
+                                    </li>
+                                    <li><a href="https://www.facebook.com/"
+                                            class="group relative flex h-[30px] w-[30px] items-center justify-center rounded-[50%] bg-black hover:bg-orange-600 duration-500">
+                                            <img src="../assets/image/about/twitter-icon-white.svg" alt="" width="14"
+                                                height="14" class="opacity-100 group-hover:opacity-0">
+                                            <img src="../assets/image/about/twitter-icon-black.svg" alt="" width="14"
+                                                height="14"
+                                                class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100">
+                                        </a>
+                                    </li>
+                                    <li><a href="https://www.facebook.com/"
+                                            class="group relative flex h-[30px] w-[30px] items-center justify-center rounded-[50%] bg-black hover:bg-orange-600 duration-500">
+                                            <img src="../assets/image/about/linkedin-icon-white.svg" alt="" width="14"
+                                                height="14" class="opacity-100 group-hover:opacity-0">
+                                            <img src="../assets/image/about/linkedin-icon-black.svg" alt="" width="14"
+                                                height="14"
+                                                class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.facebook.com/"
+                                            class="group relative flex h-[30px] w-[30px] items-center justify-center rounded-[50%] bg-black hover:bg-orange-600 duration-500">
+                                            <img src="../assets/image/about/instagram-icon-white.svg" alt="" width="14"
+                                                height="14" class="opacity-100 group-hover:opacity-0">
+                                            <img src="../assets/image/about/instagram-icon-black.svg" alt="" width="14"
+                                                height="14"
+                                                class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100">
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="rounded-[20px] bg-colorLinenRuffle p-[20px] wow animate__animated animate__flipInY"
+                        data-wow-delay="0.5s" data-wow-duration="3s">
+                        <div class="xl:h[300px] w-full overflow-hidden rounded-[20px] xl:h-[400px]">
+                            <img src="../assets/image/about/team-member-img-5.jpg" alt="">
+                        </div>
+                        <div class="mt-5">
+                            <a href=""
+                                class="font-dmSans text-[26px] leading-[1.33] hover:text-orange-600 xl:text-[30px] duration-300">
+                                Jack Fox
+                            </a>
+                            <div
+                                class="mt-3 flex flex-col justify-between gap-3 xl:flex-row xl:flex-wrap xl:items-center">
+                                <span class="text-2xl">
+                                    NLP Expert
+                                </span>
+                                <ul class="mt-auto flex gap-x-[15px]">
+                                    <li>
+                                        <a href="https://www.facebook.com/"
+                                            class="group relative flex h-[30px] w-[30px] items-center justify-center rounded-[50%] bg-black hover:bg-orange-600 duration-500">
+                                            <img src="../assets/image/about/facebook-icon-white.svg" alt="" width="14"
+                                                height="14" class="opacity-100 group-hover:opacity-0">
+                                            <img src="../assets/image/about/facebook-icon-black.svg" alt="" width="14"
+                                                height="14"
+                                                class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100">
+                                        </a>
+                                    </li>
+                                    <li><a href="https://www.facebook.com/"
+                                            class="group relative flex h-[30px] w-[30px] items-center justify-center rounded-[50%] bg-black hover:bg-orange-600 duration-500">
+                                            <img src="../assets/image/about/twitter-icon-white.svg" alt="" width="14"
+                                                height="14" class="opacity-100 group-hover:opacity-0">
+                                            <img src="../assets/image/about/twitter-icon-black.svg" alt="" width="14"
+                                                height="14"
+                                                class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100">
+                                        </a>
+                                    </li>
+                                    <li><a href="https://www.facebook.com/"
+                                            class="group relative flex h-[30px] w-[30px] items-center justify-center rounded-[50%] bg-black hover:bg-orange-600 duration-500">
+                                            <img src="../assets/image/about/linkedin-icon-white.svg" alt="" width="14"
+                                                height="14" class="opacity-100 group-hover:opacity-0">
+                                            <img src="../assets/image/about/linkedin-icon-black.svg" alt="" width="14"
+                                                height="14"
+                                                class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.facebook.com/"
+                                            class="group relative flex h-[30px] w-[30px] items-center justify-center rounded-[50%] bg-black hover:bg-orange-600 duration-500">
+                                            <img src="../assets/image/about/instagram-icon-white.svg" alt="" width="14"
+                                                height="14" class="opacity-100 group-hover:opacity-0">
+                                            <img src="../assets/image/about/instagram-icon-black.svg" alt="" width="14"
+                                                height="14"
+                                                class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100">
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="rounded-[20px] bg-colorLinenRuffle p-[20px] wow animate__animated animate__flipInY"
+                        data-wow-delay="0.5s" data-wow-duration="3s">
+                        <div class="xl:h[300px] w-full overflow-hidden rounded-[20px] xl:h-[400px]">
+                            <img src="../assets/image/about/team-member-img-6.jpg" alt="">
+                        </div>
+                        <div class="mt-5">
+                            <a href=""
+                                class="font-dmSans text-[26px] leading-[1.33] hover:text-orange-600 xl:text-[30px] duration-300">
+                                Adam Smith
+                            </a>
+                            <div
+                                class="mt-3 flex flex-col justify-between gap-3 xl:flex-row xl:flex-wrap xl:items-center">
+                                <span class="text-2xl">
+                                    Project Manager
+                                </span>
+                                <ul class="mt-auto flex gap-x-[15px]">
+                                    <li>
+                                        <a href="https://www.facebook.com/"
+                                            class="group relative flex h-[30px] w-[30px] items-center justify-center rounded-[50%] bg-black hover:bg-orange-600 duration-500">
+                                            <img src="../assets/image/about/facebook-icon-white.svg" alt="" width="14"
+                                                height="14" class="opacity-100 group-hover:opacity-0">
+                                            <img src="../assets/image/about/facebook-icon-black.svg" alt="" width="14"
+                                                height="14"
+                                                class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100">
+                                        </a>
+                                    </li>
+                                    <li><a href="https://www.facebook.com/"
+                                            class="group relative flex h-[30px] w-[30px] items-center justify-center rounded-[50%] bg-black hover:bg-orange-600 duration-500">
+                                            <img src="../assets/image/about/twitter-icon-white.svg" alt="" width="14"
+                                                height="14" class="opacity-100 group-hover:opacity-0">
+                                            <img src="../assets/image/about/twitter-icon-black.svg" alt="" width="14"
+                                                height="14"
+                                                class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100">
+                                        </a>
+                                    </li>
+                                    <li><a href="https://www.facebook.com/"
+                                            class="group relative flex h-[30px] w-[30px] items-center justify-center rounded-[50%] bg-black hover:bg-orange-600 duration-500">
+                                            <img src="../assets/image/about/linkedin-icon-white.svg" alt="" width="14"
+                                                height="14" class="opacity-100 group-hover:opacity-0">
+                                            <img src="../assets/image/about/linkedin-icon-black.svg" alt="" width="14"
+                                                height="14"
+                                                class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.facebook.com/"
+                                            class="group relative flex h-[30px] w-[30px] items-center justify-center rounded-[50%] bg-black hover:bg-orange-600 duration-500">
+                                            <img src="../assets/image/about/instagram-icon-white.svg" alt="" width="14"
+                                                height="14" class="opacity-100 group-hover:opacity-0">
+                                            <img src="../assets/image/about/instagram-icon-black.svg" alt="" width="14"
+                                                height="14"
+                                                class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100">
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section id="section-contact">
+        <div class="bg-black pb-40 pt-20 xl:pb-[200px] xl:pt-[130px]">
+            <div class="container">
+                <div class="grid grid-cols-1 items-center gap-14 md:grid-cols-[minmax(0,_1fr)_1.4fr]">
+                    <div class="order-2 overflow-hidden rounded-[20px] md:order-1 wow animate__animated animate__fadeInLeft"
+                        data-wow-delay="0.5s" data-wow-duration="3s">
+                        <img src="../assets/image/about/about-contact-img.jpg" alt="">
+                    </div>
+                    <div class="order-1 md:order-2 wow animate__animated animate__fadeInDown" data-wow-delay="0.5s"
+                        data-wow-duration="3s">
+                        <div class="mb-6 md-max-w-max">
+                            <h2 class="text-white">
+                                We always want to connect our clients
+                            </h2>
+                        </div>
+                        <div class="text-left text-lg leading-[1.4] text-white lg:text-[21px]">
+                            <p class="mb-7 last:mb-0">
+                                AI accessible and beneficial for organizations, and we look forward to partnering with
+                                businesses to achieve their AI goals.
+                            </p>
+                        </div>
+                        <ul
+                            class="mt-10 flex flex-col gap-6 font-dmSans text-[30px] tracking-[1.33] lg:mt-14 lg:gap-y-3 xl:mt-[70px]">
+                            <li
+                                class="flex flex-col gap-x-2 leading-tight text-orange-600 font-semibold lg:flex-row lg:leading-normal ">
+                                Website:
+                                <a href="" class="text-white hover:text-orange-600 duration-500">www.example.com</a>
+                            </li>
+                            <li
+                                class="flex flex-col gap-x-2 leading-tight text-orange-600 font-semibold lg:flex-row lg:leading-normal ">
+                                Email:
+                                <a href="" class="text-white hover:text-orange-600 duration-500">yourmail@mail.com</a>
+                            </li>
+                            <li
+                                class="flex flex-col gap-x-2 leading-tight text-orange-600 font-semibold lg:flex-row lg:leading-normal ">
+                                Phone:
+                                <a href="" class="text-white hover:text-orange-600 duration-500">(123) 456-7890</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer
+        class="relative z-[1] -mt-[70px] overflow-hidden rounded-tl-[30px] rounded-tr-[30px] bg-colorLinenRuffle lg:rounded-tl-[50px] lg:rounded-tr-[50px]">
+        <div class="py-[60px] xl:pb-[100px] xl:pt-[130px]">
+            <div class="overflow-hidden">
+                <div class="swiper w-full flex  items-center gap-x-[30px] whitespace-nowrap">
+                    <div class="swiper-wrapper ease-linear ">
+                        <div class="swiper-slide">
+                            <img src="https://azzle.netlify.app/assets/img/th-1/footer-text-slider-icon.svg" alt="">
+                        </div>
+                        <div
+                            class="swiper-slide block font-dmSans text-4xl font-bold leading-none -tracking-[2px] text-black lg:text-6xl xl:text-7xl xl:text-[80px]">
+                            <div class=" text-gray-800">Start building software</div>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="https://azzle.netlify.app/assets/img/th-1/footer-text-slider-icon.svg" alt=""
+                                class="">
+                        </div>
+                        <div
+                            class="swiper-slide block font-dmSans text-4xl font-bold leading-none -tracking-[2px] text-black lg:text-6xl xl:text-7xl xl:text-[80px]">
+                            <div class=" text-gray-800">Start building software</div>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="https://azzle.netlify.app/assets/img/th-1/footer-text-slider-icon.svg" alt="">
+                        </div>
+                        <div
+                            class="swiper-slide block font-dmSans text-4xl font-bold leading-none -tracking-[2px] text-black lg:text-6xl xl:text-7xl xl:text-[80px]">
+                            <div class=" text-gray-800">Start building software</div>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="https://azzle.netlify.app/assets/img/th-1/footer-text-slider-icon.svg" alt="">
+                        </div>
+                        <!-- thêm nhiều slide tùy ý -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container mx-auto">
+            <div
+                class="lg grid grid-cols-1 gap-10 py-[60px] md:grid-cols-[1fr_auto_auto] xl:grid-cols-[1fr_auto_auto_1fr] xl:gap-20 xl:py-[100px]">
+                <div class="basis-2/6 flex flex-col gap-y-6">
+                    <img src="../assets/image/logo-dark.png" alt="" width="96" height="24">
+                    <p>
+                        Our mission is to harness the power of AI to solve complex business challenges & decision-makers
+                        with data-driven insights, and enhance user experiences across digital platforms.
+                    </p>Website:
+                    <a href="">
+                        www.example.com
+                    </a>
+                </div>
+                <div class="basis-1/6 flex flex-col gap-y-6">
+                    <h4 class="font-semibold text-[21px] capitalize text-black">
+                        Primary Pages
+                    </h4>
+                    <ul class="flex flex-col gap-y-[10px] capitalize">
+                        <li><a href="">Home</a></li>
+                        <li><a href="">About Us</a></li>
+                        <li><a href="">Services</a></li>
+                        <li><a href="">Pricing</a></li>
+                        <li><a href="">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="basis-1/6 flex flex-col gap-y-6">
+                    <h4 class="font-semibold text-[21px] capitalize text-black">
+                        Utility Pages
+                    </h4>
+                    <ul class="flex flex-col gap-y-[10px] capitalize">
+                        <li><a href="">Sign Up</a></li>
+                        <li><a href="">Login</a></li>
+                        <li><a href="">404 Not Found</a></li>
+                        <li><a href="">Password Reset</a></li>
+                    </ul>
+                </div>
+                <div class="flex flex-col gap-y-[10px] capitalize">
+                    <h4 class="text-[21px] font-semibold capitalize text-black">
+                        Subscribe to our newsletter
+                    </h4>
+                    <div class="relative h-12 max-w-80">
+                        <input placeholder="Enter your Email" type="text"
+                            class="p-y-[18px] h-full w-full rounded-[50px] border-[1px] border-black px-[24px] pr-20 outline-none">
+                        <button
+                            class="absolute right-[5px] top-[50%] inline-block h-10 -translate-y-[50%] rounded-[50px] bg-black px-6 transition-all hover:bg-orange-500">
+                            <img src="https://azzle.netlify.app/assets/img/th-1/arrow-right-large.svg" alt="">
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class=" h-[1px] w-full  bg-[#DBD6CF] ">
+            </div>
+            <div class=" w-full py-9 text-center">
+                © Copyright 2023, All Rights Reserved by Mthemeus
+            </div>
+        </div>
+        <div
+            class="orange-gradient-2 absolute -top-[290px] right-[90px] -z-[1] h-[406px] w-[406px] -rotate-[58deg] rounded-[406px]">
+        </div>
+        <div
+            class="orange-gradient-1 absolute -right-[200px] -top-[205px] -z-[1] h-[451px] w-[451px] -rotate-[58deg] rounded-[451px]">
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script>
+        // Dropdown Menu JS
+        const dropdownButton = document.getElementById('menu-button');
+        const dropdownMenu = document.getElementById('dropdownMenu');
+        dropdownButton.addEventListener('click', () => {
+            dropdownMenu.classList.toggle('hidden');
+        });
+    </script>
+    <script>
+        const swiper = new Swiper('.swiper', {
+            loop: true,
+            slidesPerView: 6,
+            spaceBetween: 30,
+            speed: 8000,
+            autoplay: {
+                delay: 1,
+                disableOnInteraction: true,
+            },
+            freeMode: true,
+            freeModeMomentum: false
+        });
+    </script>
+    <script src="../libs/wowjs/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.js"
+        integrity="sha512-+k1pnlgt4F1H8L7t3z95o3/KO+o78INEcXTbnoJQ/F2VqDVhWoaiVml/OEHv9HsVgxUaVW+IbiZPUJQfF/YxZw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js"
+        integrity="sha512-ZKNVEa7gi0Dz4Rq9jXcySgcPiK+5f01CqW+ZoKLLKr9VMXuCsw3RjWiv8ZpIOa0hxO79np7Ec8DDWALM0bDOaQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="../libs/count-up/jquery.counterup.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.counter').counterUp({
+                delay: 10, // Delay in milliseconds
+                time: 1000 // Total duration of the animation in milliseconds
+            });
+        });
+    </script>
+    <script>
+        function toggleSidebar() {
+            const sidebar = document.getElementById("sidebar");
+            sidebar.classList.toggle("-translate-x-full");
+        }
+        function openSubmenu(menu) {
+            document.getElementById(`submenu-${menu}`).classList.remove("translate-x-64");
+        }
+
+        function closeSubmenu(menu) {
+            document.getElementById(`submenu-${menu}`).classList.add("translate-x-64");
+        }
+    </script>
 </body>
+
 </html>
