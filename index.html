@@ -25,14 +25,16 @@
 </head>
 
 <body>
-    <header class="w-full bg-header z-50 bg-theme py-3 px-1">
-        <div class="container mx-auto">
+    <header class="w-full bg-header z-50 bg-theme py-3 px-1 ">
+        <div class="container mx-auto ">
             <div class="flex items-center justify-between gap-x-8">
-                <a href="">
-                    <img src="assets/image/logo-dark.png" alt="">
-                </a>
                 <div>
-                    <nav>
+                    <a href="">
+                        <img src="assets/image/logo-dark.png" alt="">
+                    </a>
+                </div>
+                <div>
+                    <nav class="hidden lg:flex items-center gap-x-12 font-semibold text-base justify-between">
                         <ul class="flex gap-x-12 font-semibold text-base justify-between">
                             <li>
                                 <div class="relative inline-block text-left">
@@ -236,25 +238,66 @@
                         </ul>
                     </nav>
                 </div>
-                <div class="flex items-center gap-6">
-                    <button type="button"
-                        class=" text-4xl focus:outline-none rounded-full text-sm font-medium border border-gray-300 px-5 py-2.5 me-2 mb-2 hover:bg-orange-500 hover:text-white duration-500 after:bg-orange-500">Log
-                        in</button>
-                    <button type="button"
-                        class="text-4xl focus:outline-none rounded-full text-sm font-medium border text-white bg-black  border-gray-300 px-5 py-2.5 me-2 mb-2 hover:bg-orange-500 hover:text-white duration-500 after:bg-orange-500">Sign
-                        Up Free</button>
-
+                <div>
+                    <div class=" flex items-center gap-6 hidden md:flex">
+                        <button type="button"
+                            class=" button text-4xl focus:outline-none rounded-full  font-medium border border-gray-300 px-5 py-2.5 me-2 mb-2  hover:text-white duration-500 after:bg-orange-600"><a
+                                href="">Log in</a></button>
+                        <button type="button"
+                            class="button text-4xl focus:outline-none rounded-full  font-medium border text-white bg-black  border-gray-300 px-5 py-2.5 me-2 mb-2  hover:text-white duration-500 after:bg-orange-600"><a
+                                href="">Sign Up Free</a></button>
+                    </div>
+                    <div>
+                        <button class="md:hidden text-gray-600 focus:outline-none" onclick="toggleSidebar()">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h16M4 18h16" />
+                            </svg>
+                        </button>
+                    </div>
                 </div>
             </div>
         </div>
     </header>
+    <div id="sidebar"
+        class=" fixed top-0 left-0 h-full w-64 bg-white shadow-lg transform -translate-x-full transition-transform duration-300 ease-in-out z-50 md:hidden">
+        <div class="px-6 py-4 flex justify-between items-center ">
+            <span class="text-lg font-semibold text-gray-800"></span>
+            <button onclick="toggleSidebar()">
+                <svg class="w-5 h-5 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                </svg>
+            </button>
+        </div>
+        <nav class="px-6 py-4 space-y-2 font-semibold grid  grid-rows-6 gap-2 text-gray-800">
+            <a href="#" class="block  hover:text-blue-500">Home</a>
+            <div class="flex  gap-y-2">
+                <button onclick="openSubmenu('demos')" class="w-full text-left flex  hover:text-blue-500">Demo</button>
+                <img src="../assets/image/about/icon-black-cheveron-right.svg" alt="">
+            </div>
+            <a href="../partials/about.html"> About </a>
+            <div class="flex  gap-y-2">
+                <button onclick="openSubmenu('services')" class="w-full text-left    hover:text-blue-500">Services
+                </button>
+                <img src="../assets/image/about/icon-black-cheveron-right.svg" alt="">
+            </div>
+            <div class="flex  gap-y-2">
+                <button onclick="openSubmenu('pages')" class="w-full text-left  hover:text-blue-500">Pages
+                </button>
+                <img src="../assets/image/about/icon-black-cheveron-right.svg" alt="">
+            </div>
+            <a href="#" class="block  hover:text-blue-500">Contact</a>
+        </nav>
+    </div>
     <!-- Simplify your SaaS solution with AI  -->
     <section class="bg-theme rounded-b-[30px] overflow-hidden relative z-1 ">
         <div class="container mx-auto text-center relative max-w-[1332px]">
             <div class=" py-25 flex flex-col text-center items-center lg:mb-20 ">
-                <h1 class=" mb-6 max-w-[510px] lg:max-w-[768px] xl:max-w-[1276px] font-bold">
-                    Simplify your SaaS solution with AI
-                </h1>
+                <div class="">
+                    <h1 class=" mb-6 max-w-[510px] lg:max-w-[768px] xl:max-w-[1276px] font-bold">
+                        Simplify your SaaS solution with AI
+                    </h1>
+                </div>
                 <div class=" font-semibold mb-11 max-w-[700px] text-lg xl:max-w-[980px] mx-auto">
                     <p class=" mb-11 max-w-[700px] text-lg font-semibold sm:text-xl xl:max-w-[980px]">
                         Our AI SAAS tool is a cloud-based software delivery model. It helps businesses forecast demand
@@ -427,7 +470,7 @@
     </section>
     <!-- Accessible to a winder audience + Providing quick deploy solutions  -->
     <section>
-        <div class="pb-20 xl:pb-[150px]">
+        <div class="pb-5 xl:pb-[100px] px-4">
             <div class="max-w-[1332px] mx-auto ">
                 <div class="grid grid-cols-1 items-center gap-12 md:grid-cols-2 lg:gap-20 xl:gap-28 xxl:gap-32">
                     <div
@@ -464,7 +507,7 @@
         </div>
     </section>
     <section>
-        <div class="pb-20 xl:pb-[150px]">
+        <div class="pb-20 xl:pb-[150px] px-4">
             <div class="max-w-[1332px] mx-auto">
                 <div
                     class="pt-30 grid grid-cols-1 items-center gap-12 md:grid-cols-2 lg:gap-20 lg:grid-cols-[minmax(0,_1.2fr)_1fr] xl:grid-cols-[minmax(0,_1.2fr)_1fr] xl:gap-28 2xl:gap-32">
@@ -515,516 +558,6 @@
             </div>
         </div>
     </section>
-    <!-- HUU PHUC'S TASK  -->
-    <section id="funfact-section">
-        <div class="mx-auto max-w-[1500px] px-[20px]">
-            <div
-                class="wow grid sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2   bg-black  rounded-[20px] animate__animated animate__fadeInUp">
-                <div class="relative">
-                    <img class="relative rounded-[20px] w-full"
-                        src="https://azzle.netlify.app/assets/img/th-1/funfact-image.jpg" alt="funfact-image">
-                    <a class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 text-2xl font-bold text-center"
-                        href="#funfact-section">
-                        <div
-                            class="relative flex items-center justify-center h-[120px] w-[120px] rounded-full border-[3px] border-black backdrop-blur-[2px] hover:bg-orange-600 hover:text-white transition-all duration-300">
-                            Play
-                            <div
-                                class="absolute -z-[1] h-[110%] w-[110%] animate-[ping_1.5s_ease-in-out_infinite] rounded-full bg-gray-600 opacity-20 ">
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div>
-                    <div class=" funfact__text text-white px-[64px] pt-[128px] ">
-                        <div class="mb-8 lg:mb-16 xl:mb-6 sm:text-[60px] md:text-[60px] lg:text-[80px]  ">
-                            <p class="leading-none font-bold">AI-powered that streamline tasks</p>
-                        </div>
-                        <div>
-                            <p>As your business grows or your AI SaaS needs change, you can easily adjust your
-                                subscription
-                                level to match those needs. This flexibility ensures that AI remains an asset.</p>
-                        </div>
-                        <div class="my-14 h-[1px] w-full bg-gray-800"></div>
-                        <div
-                            class="funfact__data flex flex-col justify-center gap-x-11 gay-y-8 text-center sm:gap-y-[20px] sm:flex-row md:text-left">
-                            <div>
-                                <h2 class="text-orange-600 font-semibold  ">
-                                    <span class="counter" data-counter-time="2000">92</span>
-                                    %
-                                </h2>
-                                <p class="text-center ">Customer service inquiries</p>
-                            </div>
-                            <div>
-                                <h2 class="text-orange-600 font-semibold  ">
-                                    <span class="counter" data-counter-time="2000">75</span>
-                                    %
-                                </h2>
-                                <p class="text-center ">Using financial institutions</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-
-        </div>
-    </section>
-    <section id="pricing-section">
-        <div class="pb-20 pt-20 xl:pb-[150px] xl:pt-[130px]  ">
-            <div class="mb-10 text-center lg:mb-12 ">
-                <div class="mx-auto wow animate__animated animate__fadeIn ">
-                    <h2>Cost-effectively
-                        <br> build any software
-                    </h2>
-                </div>
-            </div>
-            <div class="container mx-auto">
-                <!-- Group tabs button :Monthly and Annually  -->
-                <div class="flex justify-center wow animate__animated animate__fadeIn ">
-                    <div class="mb-4 border-gray-200 dark:border-gray-700 ">
-                        <ul class="flex flex-wrap -mb-px rounded-full border-2 border-black font-semibold text-[20px] font-medium text-center"
-                            id="default-styled-tab" data-tabs-toggle="#default-styled-tab-content"
-                            data-tabs-active-classes="bg-black dark:text-white border-purple-600 dark:border-purple-500"
-                            data-tabs-inactive-classes="dark:border-transparent text-black border-gray-100 dark:hover:text-white"
-                            role="tablist">
-                            <li class="   " role="presentation">
-                                <button class="inline-block p-4 rounded-full  hover:cursor-pointer"
-                                    id="profile-styled-tab" data-tabs-target="#styled-profile" type="button" role="tab"
-                                    aria-controls="profile" aria-selected="false">Monthly</button>
-                            </li>
-                            <li class=" ml-2 " role="presentation">
-                                <button class="inline-block p-4  rounded-full  hover:cursor-pointer"
-                                    id="dashboard-styled-tab" data-tabs-target="#styled-dashboard" type="button"
-                                    role="tab" aria-controls="dashboard" aria-selected="false">Annually</button>
-                            </li>
-
-                        </ul>
-                    </div>
-                </div>
-                <div id="default-styled-tab-content ">
-                    <div class="hidden p-4 rounded-lg" id="styled-profile" role="tabpanel"
-                        aria-labelledby="profile-tab">
-                        <div class="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 mt-[80px] ">
-                            <div
-                                class="bg-[#efeae3] border border-gray-200 rounded-lg shadow-sm hover:bg-black hover:text-white group wow animate__animated animate__flipInY animate__delay-1s">
-                                <div class=" p-[40px] ">
-                                    <h5 class="text-current text-2xl font-bold tracking-tight">
-                                        Beginner</h5>
-                                    <p class="text-current">Up to 10 members</p>
-                                    <div class="my-4 h-[1px] w-full bg-[#DBD6CF]"></div>
-                                    <p class="text-current mb-4 text-[60px] font-bold ">$25 <span
-                                            class="text-[24px]">/Per month
-                                        </span>
-                                    </p>
-                                    <p class="text-current mb-[40px] font-normal">
-                                        This is an excellent option for people & small businesses who are starting
-                                        out.
-                                    </p>
-                                    <!-- <a href="#"
-                                        class="text-current block items-center px-[25px] py-[16px] text-sm font-bold text-center rounded-[50px] border-2 border-black  hover:text-white hover:bg-red-700 group-hover:border-red-700">
-                                        Choose the plan
-                                    </a> -->
-                                    <button type="button"
-                                        class="button w-full text-4xl focus:outline-none rounded-full text-sm font-bold  text-black border-2 border-black  px-10 py-4 me-2 hover:text-white hover:bg-red-700 group-hover:border-red-700 duration-500 after:bg-orange-600 group-hover:border-red-700">
-                                        <a href=""
-                                            class="text-current w-full items-center px-[25px] py-[8px] text-sm font-bold text-center rounded-[50px] duration-none group-hover:text-white">Choose
-                                            the plan</a></button>
-                                </div>
-                            </div>
-                            <div
-                                class="bg-[#efeae3] border border-gray-200 rounded-lg shadow-sm hover:bg-black hover:text-white group wow animate__animated animate__flipInY animate__delay-1s">
-                                <div class=" p-[40px] ">
-                                    <h5 class="text-current text-2xl font-bold tracking-tight">
-                                        Starter</h5>
-                                    <p class="text-current">Up to 50 members</p>
-                                    <div class="my-4 h-[1px] w-full bg-[#DBD6CF]"></div>
-                                    <p class="text-current mb-4 text-[60px] font-bold ">$89 <span
-                                            class="text-[24px]">/Per month
-                                        </span>
-                                    </p>
-                                    <p class="text-current mb-[40px] font-normal">
-                                        This plan is suitable for e-commerce stores as well as professional blogs.
-                                    </p>
-                                    <!-- <a href="#"
-                                    class="text-current block items-center px-[25px] py-[16px] text-sm font-bold text-center rounded-[50px] border-2 border-black  hover:text-white hover:bg-red-700 group-hover:border-red-700">
-                                    Choose the plan
-                                </a> -->
-                                    <button type="button"
-                                        class="button w-full text-4xl focus:outline-none rounded-full text-sm font-bold  text-black border-2 border-black  px-10 py-4 me-2 hover:text-white hover:bg-red-700 group-hover:border-red-700 duration-500 after:bg-orange-600 group-hover:border-red-700">
-                                        <a href=""
-                                            class="text-current w-full items-center px-[25px] py-[8px] text-sm font-bold text-center rounded-[50px] duration-none group-hover:text-white">Choose
-                                            the plan</a></button>
-                                </div>
-                            </div>
-                            <div
-                                class="bg-[#efeae3] border border-gray-200 rounded-lg shadow-sm hover:bg-black hover:text-white group wow animate__animated animate__flipInY animate__delay-1s">
-                                <div class=" p-[40px] ">
-                                    <h5 class="text-current text-2xl font-bold tracking-tight">
-                                        Pro</h5>
-                                    <p class="text-current">Up to 100 members</p>
-                                    <div class="my-4 h-[1px] w-full bg-[#DBD6CF]"></div>
-                                    <p class="text-current mb-4 text-[60px] font-bold ">$199 <span
-                                            class="text-[24px]">/Per month
-                                        </span>
-                                    </p>
-                                    <p class="text-current mb-[40px] font-normal">
-                                        Ideal for handling complicated projects enterprise-level projects, and websites.
-                                    </p>
-                                    <!-- <a href="#"
-                                        class="text-current block items-center px-[25px] py-[16px] text-sm font-bold text-center rounded-[50px] border-2 border-black  hover:text-white hover:bg-red-700 group-hover:border-red-700">
-                                        Choose the plan
-                                    </a> -->
-                                    <button type="button"
-                                        class="button w-full text-4xl focus:outline-none rounded-full text-sm font-bold  text-black border-2 border-black  px-10 py-4 me-2 hover:text-white hover:bg-red-700 group-hover:border-red-700 duration-500 after:bg-orange-600 group-hover:border-red-700">
-                                        <a href=""
-                                            class="text-current w-full items-center px-[25px] py-[8px] text-sm font-bold text-center rounded-[50px] duration-none group-hover:text-white">Choose
-                                            the plan</a></button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="hidden p-4 rounded-lg " id="styled-dashboard" role="tabpanel"
-                        aria-labelledby="dashboard-tab">
-                        <div class="grid sm:grid-cols-1 md:grid-cols-2  lg:grid-cols-3 gap-5   mt-[80px] ">
-                            <div
-                                class="bg-[#efeae3] border border-gray-200 rounded-lg shadow-sm hover:bg-black hover:text-white group">
-                                <div class=" p-[40px] ">
-                                    <h5 class="text-current text-2xl font-bold tracking-tight">
-                                        Beginner</h5>
-                                    <p class="text-current">Up to 10 members</p>
-                                    <div class="my-4 h-[1px] w-full bg-[#DBD6CF]"></div>
-                                    <p class="text-current mb-4 text-[60px] font-bold ">$240 <span
-                                            class="text-[24px]">/Per month
-                                        </span>
-                                    </p>
-                                    <p class="text-current mb-[40px] font-normal">
-                                        This plan is suitable for e-commerce stores as well as professional blogs.
-                                    </p>
-                                    <!-- <a href="#"
-                                    class="text-current block items-center px-[25px] py-[16px] text-sm font-bold text-center rounded-[50px] border-2 border-black  hover:text-white hover:bg-red-700 group-hover:border-red-700">
-                                    Choose the plan
-                                </a> -->
-                                    <button type="button"
-                                        class="button w-full text-4xl focus:outline-none rounded-full text-sm font-bold  text-black border-2 border-black  px-10 py-4 me-2 hover:text-white hover:bg-red-700 group-hover:border-red-700 duration-500 after:bg-orange-600 group-hover:border-red-700">
-                                        <a href=""
-                                            class="text-current w-full items-center px-[25px] py-[8px] text-sm font-bold text-center rounded-[50px] duration-none group-hover:text-white">Choose
-                                            the plan</a></button>
-                                </div>
-                            </div>
-                            <div
-                                class="bg-[#efeae3] border border-gray-200 rounded-lg shadow-sm hover:bg-black hover:text-white group">
-                                <div class=" p-[40px] ">
-                                    <h5 class="text-current text-2xl font-bold tracking-tight">
-                                        Starter</h5>
-                                    <p class="text-current">Up to 50 members</p>
-                                    <div class="my-4 h-[1px] w-full bg-[#DBD6CF]"></div>
-                                    <p class="text-current mb-4 text-[60px] font-bold ">$960 <span
-                                            class="text-[24px]">/Per month
-                                        </span>
-                                    </p>
-                                    <p class="text-current mb-[40px] font-normal">
-                                        This is an excellent option for people & small businesses who are starting
-                                        out.
-                                    </p>
-                                    <!-- <a href="#"
-                                class="text-current block items-center px-[25px] py-[16px] text-sm font-bold text-center rounded-[50px] border-2 border-black  hover:text-white hover:bg-red-700 group-hover:border-red-700">
-                                Choose the plan
-                            </a> -->
-                                    <button type="button"
-                                        class="button w-full text-4xl focus:outline-none rounded-full text-sm font-bold  text-black border-2 border-black  px-10 py-4 me-2 hover:text-white hover:bg-red-700 group-hover:border-red-700 duration-500 after:bg-orange-600 group-hover:border-red-700">
-                                        <a href=""
-                                            class="text-current w-full items-center px-[25px] py-[8px] text-sm font-bold text-center rounded-[50px] duration-none group-hover:text-white">Choose
-                                            the plan</a></button>
-                                </div>
-                            </div>
-                            <div
-                                class="bg-[#efeae3] border border-gray-200 rounded-lg shadow-sm hover:bg-black hover:text-white group">
-                                <div class=" p-[40px] ">
-                                    <h5 class="text-current text-2xl font-bold tracking-tight">
-                                        Pro</h5>
-                                    <p class="text-current">Up to 100 members</p>
-                                    <div class="my-4 h-[1px] w-full bg-[#DBD6CF]"></div>
-                                    <p class="text-current mb-4 text-[60px] font-bold ">$1800 <span
-                                            class="text-[24px]">/Per month
-                                        </span>
-                                    </p>
-                                    <p class="text-current mb-[40px] font-normal">
-                                        Ideal for handling complicated projects enterprise-level projects, and websites.
-                                    </p>
-                                    <!-- <a href="#"
-                            class="text-current block items-center px-[25px] py-[16px] text-sm font-bold text-center rounded-[50px] border-2 border-black  hover:text-white hover:bg-red-700 group-hover:border-red-700">
-                            Choose the plan
-                        </a> -->
-                                    <button type="button"
-                                        class="button w-full text-4xl focus:outline-none rounded-full text-sm font-bold  text-black border-2 border-black  px-10 py-4 me-2 hover:text-white hover:bg-red-700 group-hover:border-red-700 duration-500 after:bg-orange-600 group-hover:border-red-700">
-                                        <a href=""
-                                            class="text-current w-full items-center px-[25px] py-[8px] text-sm font-bold text-center rounded-[50px] duration-none group-hover:text-white">Choose
-                                            the plan</a></button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-
-            </div>
-        </div>
-    </section>
-    <section id="faq-section">
-        <div class="pb-20">
-            <div class="my-auto mx-auto px-[1rem] max-w-[90%]">
-                <div class="grid xl:grid-cols-2 md:grid-cols-2 sm:grid-cols-1 gap-5">
-                    <div class="wow animate__animated animate__fadeInLeft">
-                        <div class="mb-6">
-                            <h2>Freely ask us for more information</h2>
-                        </div>
-                        <div class="text-[21px]">
-                            <p class=" mb-7">Our AI SaaS solutions can be quickly deployed, enabling users to <br> start
-                                benefiting from AI capabilities without lengthy setup and <br> development times in
-                                fast-paced industries.</p>
-                            <button type="button"
-                                class="button text-4xl focus:outline-none rounded-full text-sm font-medium border text-white bg-black  border-gray-300 px-10 py-4 me-2  hover:text-white duration-500 after:bg-orange-600">
-                                <a href="">Ask a question</a></button>
-                        </div>
-                    </div>
-                    <div class="md:ml-10 lg:ml-20 wow animate__animated animate__fadeInRight sm:text-left    ">
-                        <!-- Arcodion  -->
-                        <div id="accordion-flush" data-accordion="collapse"
-                            data-active-classes="text-black dark:text-black"
-                            data-inactive-classes="text-black dark:text-black">
-                            <p id="accordion-flush-heading-1">
-                                <button type="button"
-                                    class="flex items-center justify-between w-full py-4 font-medium rtl:text-right text-black hover:cursor-pointer border-gray-200 dark:border-gray-700 gap-2"
-                                    data-accordion-target="#accordion-flush-body-1" aria-expanded="true"
-                                    aria-controls="accordion-flush-body-1">
-                                    <span class=" sm:text-[20px]  md:text-[28px]  xl:text-[28px] font-bold">How do I
-                                        start AI SaaS?</span>
-                                    <div>
-                                        <img src="https://azzle.netlify.app/assets/img/plus.svg" alt="plus">
-                                    </div>
-                                </button>
-                            </p>
-                            <div id="accordion-flush-body-1" class="hidden" aria-labelledby="accordion-flush-heading-1">
-                                <div
-                                    class="pb-5 border-b border-gray-200 dark:border-gray-700 animate__animated animate__fadeIn">
-                                    <p class="mb-2 text-black ">Go to the our official website and
-                                        require users to create an account.
-                                        You'll need to provide some basic information and agree to our terms and
-                                        conditions.</p>
-
-                                </div>
-                            </div>
-                            <p id="accordion-flush-heading-2">
-                                <button type="button"
-                                    class="flex items-center justify-between w-full py-4 font-medium rtl:text-right hover:cursor-pointer text-black border-gray-200 dark:border-gray-700 gap-2"
-                                    data-accordion-target="#accordion-flush-body-2" aria-expanded="true"
-                                    aria-controls="accordion-flush-body-2">
-                                    <span class="sm:text-[20px]  md:text-[28px]  xl:text-[28px] font-bold">Can I
-                                        customize AI SaaS solutions?</span>
-                                    <div>
-                                        <img src="https://azzle.netlify.app/assets/img/plus.svg" alt="plus">
-                                    </div>
-                                </button>
-                            </p>
-                            <div id="accordion-flush-body-2" class="hidden" aria-labelledby="accordion-flush-heading-2">
-                                <div
-                                    class="pb-5 border-b border-gray-200 dark:border-gray-700 animate__animated animate__fadeIn">
-                                    <p class="mb-2 text-black ">Go to the our official website and
-                                        Go to the our official website and require users to create an account.
-                                        You'll need to provide some basic information and agree to our terms and
-                                        conditions.</p>
-
-                                </div>
-                            </div>
-                            <p id="accordion-flush-heading-3">
-                                <button type="button"
-                                    class="flex items-center justify-between w-full py-4 font-medium hover:cursor-pointer rtl:text-right text-black border-gray-200 dark:border-gray-700 gap-2"
-                                    data-accordion-target="#accordion-flush-body-3" aria-expanded="true"
-                                    aria-controls="accordion-flush-body-3">
-                                    <span class="sm:text-[20px]  md:text-[28px]  xl:text-[28px] font-bold">How can AI
-                                        benefit my business?</span>
-                                    <div>
-                                        <img src="https://azzle.netlify.app/assets/img/plus.svg" alt="plus">
-                                    </div>
-                                </button>
-                            </p>
-                            <div id="accordion-flush-body-3" class="hidden" aria-labelledby="accordion-flush-heading-3">
-                                <div
-                                    class="pb-5  border-gray-200 dark:border-gray-700 animate__animated animate__fadeIn">
-                                    <p class="mb-2 text-black ">Go to the our official website and require users to
-                                        create an account.
-                                        You'll need to provide some basic information and agree to our terms and
-                                        conditions.</p>
-                                </div>
-                            </div>
-                        </div>
-
-
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section id="testimonal-section">
-        <div class="bg-black pb-40 pt-20 xl:pb-[200px] xl:pt-[130px]">
-            <div class="my-auto mx-auto px-[1rem] max-w-[90%]">
-                <div class="mb-10 text-center lg:mb-16 xl:mb-20 wow animate__animated animate__fadeInUp">
-                    <div class="mx-auto max-w-[300px] lg:max-w-[600px] xl:max-w-[680px]">
-                        <h2 class="text-white">Positive feedback from our users</h2>
-                    </div>
-                </div>
-                <div class="grid xl:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-5">
-                    <!-- testimonal-items  -->
-                    <div
-                        class="flex flex-col justify-between  gap-y-8 max-w-sm p-6 bg-black border border-gray-100 rounded-lg shadow-sm  dark:border-gray-700 wow animate__animated animate__fadeInLeft">
-                        <div class="block">
-                            <img src="https://azzle.netlify.app/assets/img/th-1/rating.svg" alt="">
-                        </div>
-                        <blockquote class="text-[18px] font-normal text-white ">
-                            <p>“This AI SaaS tool has revolutionized the way we process and analyze data.
-                                This is a game-changer for our business.”
-                            </p>
-                        </blockquote>
-                        <div class="flex items-center gap-x-4">
-                            <div class="h-[60px] w-[60px] overflow-hidden rounded-full">
-                                <img src="https://azzle.netlify.app/assets/img/th-1/testimonial-img-1.jpg" alt="">
-                            </div>
-                            <div>
-                                <span class=" block font-bold text-white ">
-                                    Max Weber</span>
-                                <span class=" block text-sm  font-normal text-white ">HR Manager</span>
-
-                            </div>
-                        </div>
-
-                    </div>
-                    <div
-                        class="flex flex-col justify-between  gap-y-8 max-w-sm p-6 bg-black border border-gray-100 rounded-lg shadow-sm  dark:border-gray-700 wow animate__animated animate__fadeInLeft">
-                        <div class="block">
-                            <img src="https://azzle.netlify.app/assets/img/th-1/rating.svg" alt="">
-                        </div>
-                        <blockquote class="text-[18px] font-normal text-white ">
-                            <p>"It answers immediately, and we've seen a significant reduction in response time.
-                                Our customers love it and so do we!"
-                            </p>
-                        </blockquote>
-                        <div class="flex items-center gap-x-4">
-                            <div class="h-[60px] w-[60px] overflow-hidden rounded-full">
-                                <img src="https://azzle.netlify.app/assets/img/th-1/testimonial-img-2.jpg" alt="">
-                            </div>
-                            <div>
-                                <span class=" block font-bold text-white ">
-                                    Douglas Smith</span>
-                                <span class=" block text-sm  font-normal text-white ">Businessman</span>
-
-                            </div>
-                        </div>
-
-                    </div>
-                    <div
-                        class="flex flex-col justify-between gap-y-8 max-w-sm p-6 bg-black border border-gray-100 rounded-lg shadow-sm  dark:border-gray-700 wow animate__animated animate__fadeInLeft">
-                        <div class="block">
-                            <img src="https://azzle.netlify.app/assets/img/th-1/rating.svg" alt="">
-                        </div>
-                        <blockquote class="text-[18px] font-normal text-white ">
-                            <p>"It is accurate, fast and supports multiple languages support.
-                                It is a must for any international business success."
-                            </p>
-                        </blockquote>
-                        <div class="flex items-center gap-x-4">
-                            <div class="h-[60px] w-[60px] overflow-hidden rounded-full">
-                                <img src="https://azzle.netlify.app/assets/img/th-1/testimonial-img-3.jpg" alt="">
-                            </div>
-                            <div>
-                                <span class=" block font-bold text-white ">
-                                    Abraham Maslo</span>
-                                <span class=" block text-sm  font-normal text-white ">Founder @ Marketing Company</span>
-
-                            </div>
-                        </div>
-
-                    </div>
-                    <div
-                        class="flex flex-col justify-between  gap-y-8 max-w-sm p-6 bg-black border border-gray-100 rounded-lg shadow-sm  dark:border-gray-700 wow animate__animated animate__fadeInRight">
-                        <div class="block">
-                            <img src="https://azzle.netlify.app/assets/img/th-1/rating.svg" alt="">
-                        </div>
-                        <blockquote class="text-[18px] font-normal text-white ">
-                            <p>"Security is a top concern for us, and AI SaaS takes it seriously.
-                                It's a reassuring layer of protection for our organization."
-                            </p>
-                        </blockquote>
-                        <div class="flex items-center gap-x-4">
-                            <div class="h-[60px] w-[60px] overflow-hidden rounded-full">
-                                <img src="https://azzle.netlify.app/assets/img/th-1/testimonial-img-4.jpg" alt="">
-                            </div>
-                            <div>
-                                <span class=" block font-bold text-white ">
-                                    Jack Fayol</span>
-                                <span class=" block text-sm  font-normal text-white ">HR Manager</span>
-
-                            </div>
-                        </div>
-
-                    </div>
-                    <div
-                        class="flex flex-col justify-between  gap-y-8 max-w-sm p-6 bg-black border border-gray-100 rounded-lg shadow-sm  dark:border-gray-700  wow animate__animated animate__fadeInRight">
-                        <div class="block">
-                            <img src="https://azzle.netlify.app/assets/img/th-1/rating.svg" alt="">
-                        </div>
-                        <blockquote class="text-[18px] font-normal text-white ">
-                            <p>"We were concerned about integrating their APIs were well documented,
-                                and their support team was super cool."
-                            </p>
-                        </blockquote>
-                        <div class="flex items-center gap-x-4">
-                            <div class="h-[60px] w-[60px] overflow-hidden rounded-full">
-                                <img src="https://azzle.netlify.app/assets/img/th-1/testimonial-img-5.jpg" alt="">
-                            </div>
-                            <div>
-                                <span class=" block font-bold text-white ">
-                                    Karen Lynn</span>
-                                <span class=" block text-sm  font-normal text-white ">Software Engineer</span>
-
-                            </div>
-                        </div>
-
-                    </div>
-                    <div
-                        class="flex flex-col justify-between  gap-y-8 max-w-sm p-6 bg-black border border-gray-100 rounded-lg shadow-sm  dark:border-gray-700  wow animate__animated animate__fadeInRight">
-                        <div class="block">
-                            <img src="https://azzle.netlify.app/assets/img/th-1/rating.svg" alt="">
-                        </div>
-                        <blockquote class="text-[18px] font-normal text-white ">
-                            <p>"The return on investment has exceeded our expectations.
-                                it's an investment in the future of our business."
-                            </p>
-                        </blockquote>
-                        <div class="flex items-center gap-x-4">
-                            <div class="h-[60px] w-[60px] overflow-hidden rounded-full">
-                                <img src="https://azzle.netlify.app/assets/img/th-1/testimonial-img-6.jpg" alt="">
-                            </div>
-                            <div>
-                                <span class=" block font-bold text-white ">
-                                    Henry Ochi</span>
-                                <span class=" block text-sm  font-normal text-white ">Bank Manager</span>
-
-                            </div>
-                        </div>
-
-                    </div>
-
-
-                </div>
-
-            </div>
-        </div>
-    </section>
-
-    <!-- HUU PHUC'S TASK END  -->
-
-
-
     <footer class="w-full rela bg-theme">
         <div class="swiper1  w-full overflow-x-hidden">
             <div class="swiper-wrapper wrapper ease-linear ">
@@ -1056,11 +589,13 @@
             </div>
         </div>
         <div class="container mx-auto">
-            <div class="flex gap-10">
+            <div
+                class="lg grid grid-cols-1 gap-10 py-[60px] md:grid-cols-[1fr_auto_auto] xl:grid-cols-[1fr_auto_auto_1fr] xl:gap-20 xl:py-[100px]">
                 <div class="basis-2/6 flex flex-col gap-y-6">
-                    <img src="assets/image/logo-dark.png" alt="" width="96" height="24">
+                    <img src="../assets/image/logo-dark.png" alt="" width="96" height="24">
                     <p>
-                        Our mission is to harness the power of AI to solve complex business challenges & decision-makers
+                        Our mission is to harness the power of AI to solve complex business challenges &
+                        decision-makers
                         with data-driven insights, and enhance user experiences across digital platforms.
                     </p>Website:
                     <a href="">
@@ -1104,11 +639,17 @@
                     </div>
                 </div>
             </div>
-            <div class=" h-[1px] w-full  bg-[#DBD6CF]">
+            <div class=" h-[1px] w-full  bg-[#DBD6CF] ">
             </div>
             <div class=" w-full py-9 text-center">
                 © Copyright 2023, All Rights Reserved by Mthemeus
             </div>
+        </div>
+        <div
+            class="orange-gradient-2 absolute -top-[290px] right-[90px] -z-[1] h-[406px] w-[406px] -rotate-[58deg] rounded-[406px]">
+        </div>
+        <div
+            class="orange-gradient-1 absolute -right-[200px] -top-[205px] -z-[1] h-[451px] w-[451px] -rotate-[58deg] rounded-[451px]">
         </div>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
@@ -1146,21 +687,6 @@
                 delay: 2500,
                 disableOnInteraction: true,
             },
-        });
-    </script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.js"
-        integrity="sha512-+k1pnlgt4F1H8L7t3z95o3/KO+o78INEcXTbnoJQ/F2VqDVhWoaiVml/OEHv9HsVgxUaVW+IbiZPUJQfF/YxZw=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js"
-        integrity="sha512-ZKNVEa7gi0Dz4Rq9jXcySgcPiK+5f01CqW+ZoKLLKr9VMXuCsw3RjWiv8ZpIOa0hxO79np7Ec8DDWALM0bDOaQ=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="./libs/count-up/jquery.counterup.min.js"></script>
-    <script>
-        $(document).ready(function () {
-            $('.counter').counterUp({
-                delay: 10, // Delay in milliseconds
-                time: 1000 // Total duration of the animation in milliseconds
-            });
         });
     </script>
     <!-- wow.js  -->
