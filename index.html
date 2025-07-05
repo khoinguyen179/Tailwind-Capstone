@@ -26,7 +26,7 @@
 </head>
 
 <body>
-    <header class="w-full bg-header z-50 bg-theme py-3 px-1 ">
+    <header class="w-full bg-header z-50 bg-theme py-3 px-1 flex items-center">
         <div class="w-[1300px] mx-auto ">
             <div class="flex items-center justify-between gap-x-8">
                 <div>
@@ -237,25 +237,22 @@
                         </ul>
                     </nav>
                 </div>
-                <div>
-                    <div class=" flex items-center gap-6 hidden md:flex">
-                        <button type="button"
-                            class=" button text-4xl focus:outline-none rounded-full  font-medium border border-gray-300 px-5 py-2.5 me-2 mb-2  hover:text-white duration-500 after:bg-orange-600"><a
-                                href="">Log in</a></button>
-                        <button type="button"
-                            class="button text-4xl focus:outline-none rounded-full  font-medium border text-white bg-black  border-gray-300 px-5 py-2.5 me-2 mb-2  hover:text-white duration-500 after:bg-orange-600"><a
-                                href="">Sign Up Free</a></button>
-                    </div>
-                    <div>
-                        <button class="md:hidden text-gray-600 focus:outline-none" onclick="toggleSidebar()">
-                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M4 6h16M4 12h16M4 18h16" />
-                            </svg>
-                        </button>
-                    </div>
+                <div class=" flex items-center gap-6 hidden md:flex">
+                    <button type="button"
+                        class=" button text-4xl focus:outline-none rounded-full  font-medium border border-gray-300 px-5 py-2.5 me-2 mb-2  hover:text-white duration-500 after:bg-orange-600"><a
+                            href="">Log in</a></button>
+                    <button type="button"
+                        class="button text-4xl focus:outline-none rounded-full  font-medium border text-white bg-black  border-gray-300 px-5 py-2.5 me-2 mb-2  hover:text-white duration-500 after:bg-orange-600"><a
+                            href="">Sign Up Free</a></button>
                 </div>
             </div>
+        </div>
+        <div>
+            <button class="md:hidden text-gray-600 focus:outline-none" onclick="toggleSidebar()">
+                <svg class="w-10 h10" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
+            </button>
         </div>
     </header>
     <div id="sidebar"
