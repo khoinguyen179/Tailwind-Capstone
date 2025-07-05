@@ -564,7 +564,7 @@
             <div
                 class="wow grid sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2   bg-black  rounded-[20px] animate__animated animate__fadeInUp">
                 <div class="relative">
-                    <img class="relative rounded-[20px] w-full"
+                    <img class="relative aspect-[693/320] h-full object-cover lg:aspect-auto rounded-[20px] w-full"
                         src="https://azzle.netlify.app/assets/img/th-1/funfact-image.jpg" alt="funfact-image">
                     <a class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 text-2xl font-bold text-center"
                         href="#funfact-section">
@@ -578,30 +578,32 @@
                     </a>
                 </div>
                 <div>
-                    <div class=" funfact__text text-white px-[64px] pt-[128px] ">
-                        <div class="mb-8 lg:mb-16 xl:mb-6 sm:text-[60px] md:text-[60px] lg:text-[80px]  ">
-                            <p class="leading-none font-bold">AI-powered that streamline tasks</p>
+                    <div class="text-white h-full px-6 py-16 sm:px-6 sm:py-20 md:px-16 xl:py-32 xl:px-10   ">
+
+                        <div class="mb-8   lg:mb-16 xl:mb-6 ">
+                            <p class="leading-none text-[36px] sm:text[48px] md:text[48px] xl:text-[70px] font-bold">
+                                AI-powered that
+                                streamline tasks</p>
                         </div>
                         <div>
-                            <p>As your business grows or your AI SaaS needs change, you can easily adjust your
+                            <p class="text-lg xl:text-[21px] text-left">As your business grows or your AI SaaS needs
+                                change, you can easily adjust your
                                 subscription
                                 level to match those needs. This flexibility ensures that AI remains an asset.</p>
                         </div>
                         <div class="my-14 h-[1px] w-full bg-gray-800"></div>
                         <div
-                            class="funfact__data flex flex-col justify-center gap-x-11 gay-y-8 text-center sm:gap-y-[20px] sm:flex-row md:text-left">
+                            class="flex flex-col justify-center gap-x-11 gay-y-8 text-center sm:gap-y-[20px] sm:flex-row md:text-left">
                             <div>
-                                <h2 class="text-orange-600 font-semibold  ">
-                                    <span class="counter" data-counter-time="2000">92</span>
-                                    %
-                                </h2>
+                                <p class="text-[48px] lg:leading-32  text-orange-600 font-semibold  ">
+                                    <span class="counter" data-counter-time="2000">92</span>%
+                                </p>
                                 <p class="text-center ">Customer service inquiries</p>
                             </div>
                             <div>
-                                <h2 class="text-orange-600 font-semibold  ">
-                                    <span class="counter" data-counter-time="2000">75</span>
-                                    %
-                                </h2>
+                                <p class="text-[48px] lg:leading-32   text-orange-600 font-semibold  ">
+                                    <span class="counter" data-counter-time="2000">75</span>%
+                                </p>
                                 <p class="text-center ">Using financial institutions</p>
                             </div>
                         </div>
@@ -624,7 +626,7 @@
             <div class="container mx-auto">
                 <!-- Group tabs button :Monthly and Annually  -->
                 <div class="flex justify-center wow animate__animated animate__fadeIn ">
-                    <div class="mb-4 border-gray-200 dark:border-gray-700 ">
+                    <div class=" lg:mb-4 border-gray-200 dark:border-gray-700 ">
                         <ul class="flex flex-wrap -mb-px rounded-full border-2 border-black font-semibold text-[20px] font-medium text-center"
                             id="default-styled-tab" data-tabs-toggle="#default-styled-tab-content"
                             data-tabs-active-classes="bg-black dark:text-white border-purple-600 dark:border-purple-500"
@@ -647,7 +649,7 @@
                 <div id="default-styled-tab-content ">
                     <div class="hidden p-4 rounded-lg" id="styled-profile" role="tabpanel"
                         aria-labelledby="profile-tab">
-                        <div class="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 mt-[80px] ">
+                        <div class="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 mt-12 lg:mt-[80px] ">
                             <div
                                 class="bg-[#efeae3] border border-gray-200 rounded-lg shadow-sm hover:bg-black hover:text-white group wow animate__animated animate__flipInY animate__delay-1s">
                                 <div class=" p-[40px] flex flex-col justify-between ">
@@ -655,11 +657,11 @@
                                         Beginner</h5>
                                     <p class="text-current">Up to 10 members</p>
                                     <div class="my-4 h-[1px] w-full bg-[#DBD6CF]"></div>
-                                    <p class="text-current mb-4 text-[60px] font-bold ">$25 <span
+                                    <h4 class="text-current lg:mb-4  text-12 lg:text-[60px] font-bold ">$25 <span
                                             class="text-[24px]">/Per month
                                         </span>
-                                    </p>
-                                    <p class="text-current mb-[40px] font-normal min-h-[120px]">
+                                    </h4>
+                                    <p class="text-current mb-[40px] font-normal line-clamp-2 min-h-[60px] ">
                                         This is an excellent option for people & small businesses who are starting
                                         out.
                                     </p>
@@ -681,11 +683,12 @@
                                         Starter</h5>
                                     <p class="text-current">Up to 50 members</p>
                                     <div class="my-4 h-[1px] w-full bg-[#DBD6CF]"></div>
-                                    <p class="text-current mb-4 text-[60px] font-bold ">$89 <span
+                                    <h4 class="text-current lg:mb-4  text-12 lg:text-[60px] font-bold ">$89 <span
                                             class="text-[24px]">/Per month
                                         </span>
+                                    </h4>
                                     </p>
-                                    <p class="text-current mb-[40px] font-normal min-h-[120px]">
+                                    <p class="text-current mb-[40px] font-normal  line-clamp-2 min-h-[60px] ">
                                         This plan is suitable for e-commerce stores as well as professional blogs.
                                     </p>
                                     <!-- <a href="#"
@@ -706,11 +709,11 @@
                                         Pro</h5>
                                     <p class="text-current">Up to 100 members</p>
                                     <div class="my-4 h-[1px] w-full bg-[#DBD6CF]"></div>
-                                    <p class="text-current mb-4 text-[60px] font-bold ">$199 <span
+                                    <h4 class="text-current lg:mb-4  text-12 lg:text-[60px] font-bold ">$199 <span
                                             class="text-[24px]">/Per month
                                         </span>
-                                    </p>
-                                    <p class="text-current mb-[40px] font-normal min-h-[120px] ">
+                                    </h4>
+                                    <p class="text-current mb-[40px] font-normal line-clamp-2 min-h-[60px]  ">
                                         Ideal for handling complicated projects enterprise-level projects, and websites.
                                     </p>
                                     <!-- <a href="#"
@@ -736,12 +739,11 @@
                                         Beginner</h5>
                                     <p class="text-current">Up to 10 members</p>
                                     <div class="my-4 h-[1px] w-full bg-[#DBD6CF]"></div>
-                                    <p
-                                        class="text-current mb-4  sm:text-[40px] md:text-[50px] lg:text-[60px] xl:text-[50px] 2xl:text-[60px] font-bold ">
-                                        $240 <span class="text-[24px]">/Per month
+                                    <h4 class="text-current lg:mb-4  text-12 lg:text-[60px] font-bold ">$240 <span
+                                            class="text-[24px]">/Per month
                                         </span>
-                                    </p>
-                                    <p class="text-current mb-[40px] font-normal min-h-[120px]">
+                                    </h4>
+                                    <p class="text-current mb-[40px] font-normal line-clamp-2 min-h-[60px] ">
                                         This plan is suitable for e-commerce stores as well as professional blogs.
                                     </p>
                                     <!-- <a href="#"
@@ -762,12 +764,11 @@
                                         Starter</h5>
                                     <p class="text-current">Up to 50 members</p>
                                     <div class="my-4 h-[1px] w-full bg-[#DBD6CF]"></div>
-                                    <p
-                                        class="text-current mb-4 font-bold sm:text-[40px] md:text-[50px] lg:text-[60px] xl:text-[50px] 2xl:text-[60px] ">
-                                        $960 <span class="text-[24px]">/Per month
+                                    <h4 class="text-current lg:mb-4  text-12 lg:text-[60px] font-bold ">$960 <span
+                                            class="text-[24px]">/Per month
                                         </span>
-                                    </p>
-                                    <p class="text-current mb-[40px] font-normal min-h-[120px]">
+                                    </h4>
+                                    <p class="text-current mb-[40px] font-normal line-clamp-2 min-h-[60px] ">
                                         This is an excellent option for people & small businesses who are starting
                                         out.
                                     </p>
@@ -789,13 +790,11 @@
                                         Pro</h5>
                                     <p class="text-current">Up to 100 members</p>
                                     <div class="my-4 h-[1px] w-full bg-[#DBD6CF]"></div>
-                                    <p
-                                        class="text-current mb-4 sm:text-[40px] md:text-[50px] lg:text-[60px] xl:text-[50px] 2xl:text-[60px] font-bold ">
-                                        $1800 <span class="text-[24px]">/Per
-                                            month
+                                    <h4 class="text-current lg:mb-4  text-12 lg:text-[60px] font-bold ">$1800 <span
+                                            class="text-[24px]">/Per month
                                         </span>
-                                    </p>
-                                    <p class="text-current mb-[40px] font-normal min-h-[120px]">
+                                    </h4>
+                                    <p class="text-current mb-[40px] font-normal line-clamp-2 min-h-[60px] ">
                                         Ideal for handling complicated projects enterprise-level projects, and websites.
                                     </p>
                                     <!-- <a href="#"
@@ -1078,7 +1077,7 @@
 
 
 
-    <footer class="w-full rela bg-theme">
+    <footer class="w-full relative bg-theme overflow-hidden">
         <div class="swiper1  w-full overflow-x-hidden">
             <div class="swiper-wrapper wrapper ease-linear ">
                 <div class="swiper-slide">
