@@ -1207,6 +1207,19 @@
             },
         });
     </script>
+    <script>
+        function toggleSidebar() {
+            const sidebar = document.getElementById("sidebar");
+            sidebar.classList.toggle("-translate-x-full");
+        }
+        function openSubmenu(menu) {
+            document.getElementById(`submenu-${menu}`).classList.remove("translate-x-64");
+        }
+
+        function closeSubmenu(menu) {
+            document.getElementById(`submenu-${menu}`).classList.add("translate-x-64");
+        }
+    </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.js"
         integrity="sha512-+k1pnlgt4F1H8L7t3z95o3/KO+o78INEcXTbnoJQ/F2VqDVhWoaiVml/OEHv9HsVgxUaVW+IbiZPUJQfF/YxZw=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
